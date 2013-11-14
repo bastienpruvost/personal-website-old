@@ -8,4 +8,6 @@
     = csrf_meta_tags
 
   %body
+    = render partial: "layouts/partials/header"
     = yield
+    = render partial: "layouts/partials/footer"

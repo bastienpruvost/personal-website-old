@@ -45,3 +45,8 @@ end
 gem 'rails_12factor', group: :production
 
 gem 'haml'
+
+#bootstrap + less
+gem 'therubyracer'
+gem 'jquery-rails'
+gem 'less-rails-bootstrap'
