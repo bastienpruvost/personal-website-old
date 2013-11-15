@@ -1,0 +1,71 @@
+@import "mixins";
+@import "colors";
+
+.navbar{
+  background-color: white;
+}
+
+.navbar-collapse{
+  .gradient(#fafafa, #fafafa, #ffffff);
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+#nav-collap {
+  border: 1px solid @beige;
+}
+
+.red {
+  color: @red;
+}
+
+#menu ul.navbar-nav { 
+  width: 400px;
+  margin: auto;
+  float: none;
+  li.active {
+    a {
+      background-color: @red;
+      color: white;
+    }
+  }
+}
+
+#menu ul li a {
+  color: @grey;
+}
+
+#social ul {
+  float: right;
+  padding: 9px;
+  list-style: none;
+  display: block;
+  height: 32px;
+  li {
+    height: 32px;
+    width: 32px;
+    float: left;
+    &:hover {background-position: 0% 100%;}
+    cursor: pointer;
+  }
+  .viadeo {
+    background-image: url('/assets/social_icons/viadeo.png');
+  }
+  .linkedin {
+    background-image: url('/assets/social_icons/linkedin.png');
+  }
+  .skype {
+    background-image: url('/assets/social_icons/skype.png');
+  }
+  .twitter {
+    background-image: url('/assets/social_icons/twitter.png');
+  }
+  .facebook {
+    background-image: url('/assets/social_icons/facebook.png');
+  }
+  .googleplus {
+    background-image: url('/assets/social_icons/googleplus.png');
+  }
+}

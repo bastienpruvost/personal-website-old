@@ -1,33 +1,42 @@
-.navbar.navbar-default{role: "navigation"}
-  .row.top_header
-    %h3.col-xs-10.col-sm-6
-      Bastien Pruvost
-    .col-xs-2.navbar-header
-      %button.navbar-toggle{ type: "button", "data-toggle" => "collapse", "data-target" => "#bs-example-navbar-collapse-1"}
-        %span.sr-only
-          Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-    .clearfix.visible-xs
-    .col-xs-12.col-sm-6{css: "height:50px"}
-      Social LINKS TWITTER FACEBOOK ETC ......
+#header
+  .navbar.navbar-default{role: "navigation"}
+    .container#top_header
+      .row
+        .col-xs-10.col-sm-6
+          %img{src: "assets/bastienpruvost.png"}
+        .col-xs-2.navbar-header
+          %button.navbar-toggle{ type: "button", "data-toggle" => "collapse", "data-target" => "#nav-collap"}
+            %span.sr-only
+              Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        .clearfix.visible-xs
+        #social.col-xs-12.col-sm-6.hidden-xs
+          %ul
+            %li.viadeo
+            %li.linkedin
+            %li.skype
+            %li.twitter
+            %li.facebook
+            %li.googleplus
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  .collapse.navbar-collapse#bs-example-navbar-collapse-1
-    %ul.nav.nav-justified
-      %li.active
-        %a{href: "#"}
-          Link
-      %li
-        %a{href: "#"}
-          Link
-      %li
-        %a{href: "#"}
-          Link
-      %li
-        %a{href: "#"}
-          Link
-      %li
-        %a{href: "#"}
-          Link
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    .collapse.navbar-collapse#nav-collap
+      .container#menu
+        %ul.nav.navbar-nav
+          %li.active
+            %a{href: "#"}
+              Home
+          %li
+            %a{href: "#"}
+              CV
+          %li
+            %a{href: "#"}
+              Projets
+          %li
+            %a{href: "#"}
+              Blog
+          %li
+            %a{href: "#"}
+              Contact

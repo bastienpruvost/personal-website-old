@@ -14,4 +14,9 @@
 
 /*
  *= require twitter/bootstrap
+
+ *= require mixins
+
+ *= require header
+ *= require main
  */
