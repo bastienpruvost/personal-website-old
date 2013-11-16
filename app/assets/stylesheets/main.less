@@ -1,4 +1,48 @@
+@import "colors";
+@import "mixins";
+
 body {
   padding-right: 0px;
   padding-left: 0px;
 }
+
+#footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.85em;
+  padding: 10px;
+}
+
+#intro {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.woaw {
+  font-size: 1.3em;
+  color: @red;
+  font-weight: bold;
+}
+
+.place {
+  margin: 5px;
+  padding-bottom: 20px;
+  .box-title {
+    text-align: center;
+    border: 1px solid @beige;
+    background-color: @extralight;
+    color: @red;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+  .box {
+    padding: 10px;
+    color: @grey;
+    font-size: 0.9em;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
