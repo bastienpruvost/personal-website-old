@@ -1,2 +1,40 @@
 :javascript
   $("#menu li a[href='/projets']").parent().addClass("active")
+
+.portfolioFilter
+  %a.current{href: "#", "data-filter" => "*"}
+    Toutes Categories
+  %a{href: "#", "data-filter" => ".web"}
+    Web
+  %a{href: "#", "data-filter" => ".android"}
+    Android
+  %a{href: "#", "data-filter" => ".ios"}
+    iOS
+  %a{href: "#", "data-filter" => ".desktop"}
+    Desktop
+
+.portfolioContainer#portfolio
+  .item.web
+    .hover_message="En savoir plus"
+    %img{src: "http://placehold.it/250x250"}
+  .item.android
+    .hover_message="En savoir plus"
+    %img{src: "http://placehold.it/250x250"}
+  .item.web
+    .hover_message="En savoir plus"
+    %img{src: "http://placehold.it/250x250"}
+  .item.ios
+    .hover_message="En savoir plus"
+    %img{src: "http://placehold.it/250x250"}
+  .item.desktop
+    .hover_message="En savoir plus"
+    %img{src: "http://placehold.it/250x250"}
+  .item.web
+    .hover_message="En savoir plus"
+    %img{src: "http://placehold.it/250x250"}
+
+
+:javascript
+  $(window).load(function(){
+    startPortfolio();
+  });
