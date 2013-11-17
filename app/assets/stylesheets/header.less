@@ -18,15 +18,21 @@
   border: 1px solid @beige;
 }
 
+// Hardcoding a size for the menu when not on a phone
+// so that it can be "margin: auto"-ed
+@media (min-width: 767px) {
+  #menu ul.navbar-nav {
+    width: 400px;
+  }
+}
+
 #menu ul.navbar-nav { 
-  width: 400px;
   margin: auto;
   float: none;
-  li.active {
-    a {
-      background-color: @red;
-      color: white;
-    }
+  li > a { text-align: center; }
+  li.active > a {
+    background-color: @red;
+    color: white;
   }
 }
 
