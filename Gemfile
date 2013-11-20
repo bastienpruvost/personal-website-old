@@ -47,3 +47,5 @@ gem 'haml'
 gem 'therubyracer'
 gem 'jquery-rails'
 gem 'less-rails-bootstrap'
+
+gem 'pg'
