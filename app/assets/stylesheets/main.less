@@ -1,5 +1,6 @@
 @import "colors";
 @import "mixins";
+@import "twitter/bootstrap";
 
 body {
   padding-right: 0px;
@@ -43,5 +44,57 @@ body {
     font-size: 0.9em;
     text-align: justify;
     text-justify: inter-word;
+  }
+}
+
+/* Resume
+================================================== */
+
+.resume {
+  .category {
+    h2 {
+      .place > .box-title;
+      margin-bottom: 5px;
+      font-size: 18px;
+      list-style: none;
+    }
+    .entry {
+      h3 {
+        display: list-item;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+  .place {
+    .label;
+    .label-default;
+  }
+  .description {
+    margin-bottom: 30px;
+  }
+  .date {
+    .label;
+    .label-default;
+  }
+  .skill-container {
+    height:18px;
+    width:100px;
+    display:inline-block;
+    background:#eee;
+    margin-bottom:5px;
+    border: 1px solid @red2;
+  }
+  .skill {
+    height:17px;
+    background:@red2;
+    font-size:11px;
+    color:#fff;
+    border: 1px solid @red2;
+    padding:0 5px;
   }
 }
