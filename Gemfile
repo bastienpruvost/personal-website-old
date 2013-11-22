@@ -49,3 +49,7 @@ gem 'jquery-rails'
 gem 'less-rails-bootstrap'
 
 gem 'pg'
+
+group :development do
+  gem 'webrick'
+end

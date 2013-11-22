@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Bastienpruvost::Application.config.secret_key_base = '270a0181e604b7b92b881e2200df62477bfea7521e9538cf583a2a7f7ff682a6abbaf98070b541b41387cd6c0c36d11b5990ace13ddb4e37cbf57deb9bf539ce'
+Bastienpruvost::Application.config.secret_key_base = ENV["secret_token"]
