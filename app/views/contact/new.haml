@@ -1,26 +1,43 @@
 :javascript
   $("#menu li a[href='/contact']").parent().addClass("active")
 
-=form_for @message, :url => contact_path do |form|
-  %fieldset.fields
-    .field
-      = form.label :name
-      = form.text_field :name
 
-    .field
-      = form.label :email
-      = form.text_field :email
+.col-md-6.absolute_center
+  %h3 Me contacter
+  =form_for @message, :class => "form-horizontal", :url => contact_path do |form|
+    .form-group
+      .col-sm-2 Nom:
+      .col-sm-10
+        = form.text_field :name, :class => "form-control input-sm"
 
-    .field
-      = form.label :subject
-      = form.text_field :subject
+    .form-group
+      .col-sm-2 Email:
+      .col-sm-10
+        = form.email_field :email, :class => "form-control input-sm"
 
-    .field
-      = form.label :body
-      = form.text_area :body
+    .form-group
+      .col-sm-2 Sujet:
+      .col-sm-10
+        = form.text_field :subject, :class => "form-control input-sm"
 
-  %fieldset.actions
-    = form.submit "Send"
-  
-- flash.each do |name, msg|
-  = content_tag :div, msg, class: name
+    .form-group
+      .col-sm-2 Message:
+      .col-sm-10
+        = form.text_area :body, :class => "form-control", :rows => 6
+
+    .form-group
+      = form.submit "Envoyer", :class => "btn btn-default"
+      - flash.each do |name, msg|
+        = content_tag :span, msg, class: name
+.col-md-6#rightcol.absolute_center
+  %img#map.img-responsive{src: "/assets/map.jpg"}
+  .col-sm-6
+    Bastien PRUVOST 
+    %br
+    251 rue Faidherbe 
+    %br
+    62400 Béthune 
+  .col-sm-6
+    bastien.pruvost@gmail.com 
+    %br
+    +33 6 61 66 44 74 

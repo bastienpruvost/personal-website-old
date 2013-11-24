@@ -8,7 +8,7 @@ body {
 }
 
 #footer {
-  margin-top: 10px;
+  margin-top: 40px;
   text-align: center;
   font-size: 0.85em;
   padding: 10px;
@@ -35,6 +35,7 @@ body {
     color: @red;
     font-weight: bold;
     padding: 5px;
+    margin: 0px;
     text-transform: uppercase;
     font-size: 0.9em;
   }
@@ -51,17 +52,24 @@ body {
 ================================================== */
 
 .resume {
+  #left_col {
+    padding-right: 30px;
+    margin: 0px;
+  }
+  #right_col {
+    margin: 0px;
+  }
   .category {
+    margin-bottom: 40px;
     h2 {
       .place > .box-title;
-      margin-bottom: 5px;
+      margin-bottom: 25px;
       font-size: 18px;
       list-style: none;
     }
     .entry {
       h3 {
         display: list-item;
-        margin-bottom: 5px;
         font-size: 14px;
         font-weight: bold;
       }
@@ -89,7 +97,7 @@ body {
   }
   .skill-container {
     height:18px;
-    width:100px;
+    width:32%;
     display:inline-block;
     background:#eee;
     margin-bottom:5px;
@@ -103,4 +111,31 @@ body {
     border: 1px solid @red2;
     padding:0 5px;
   }
+}
+
+.form-group {
+  padding: 10px 0px;
+}
+
+.btn-bast {
+  width: 70%;
+  background-color: @red;
+  color: white;
+  &:hover {
+    background-color: @red2;
+    color: white !important;
+  }
+}
+
+.parent_btn_bast {
+  text-align:center;
+  padding-bottom: 30px;
+}
+
+#map {
+  margin: 40px 0px;
+}
+
+#rightcol {
+  text-align: center;
 }

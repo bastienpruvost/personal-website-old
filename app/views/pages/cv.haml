@@ -2,17 +2,18 @@
   $("#menu li a[href='/cv']").parent().addClass("active")
 
 .resume
-  .col-md-7
+  #left_col.col-md-8
     .education.category
       %h2 Education
       .entry
         %h3 Elève-Ingénieur de 4e année
         .info
+          .date 2011 - 2012
+          .place IG2I 
+        .description 
           %a{href: "/ig2i"}
             .know-more
-          .date 2011 - 2012
-          .place IG2I (Institut de Génie Informatique et Industriel)
-        .description Ecole d'ingénieurs département de l'Ecole Centrale de Lille. Option Génie Informatique.
+          Institut de Génie Informatique et Industriel. Ecole d'ingénieurs département de l'Ecole Centrale de Lille. Option Génie Informatique.
       .entry
         %h3 Baccalauréat Scientifique
         .date 2007
@@ -79,7 +80,14 @@
         .description
           Projet Informatique (2e année IG2I):
           Gestion de projet : Analyse, conception et développement du site web d’une association (utilisé à des fins de gestion des adhérents et des activités) au sein d’une équipe de 6 personnes.
-  .col-md-4.col-md-offset-1
+  
+
+  #right_col.col-md-4
+    
+    .parent_btn_bast
+      %button.btn.btn-bast
+        Download PDF Version
+
     .skills.category
       %h2 Skills
       .entry
@@ -168,7 +176,3 @@
         .description
           Lorem ipuorobgoregoLorem ipuorobgorego Lorem ipuorobgoregoLorem ipuorobgoregoLorem ipuorobgorego
           Lorem ipuorobgoregoLorem ipuorobgoregoLorem ipuorobgorego Lorem ipuorobgorego  
-
-    .pdf.category
-      %a{href: "/file/file.pdf"}
-        %h2 Download PDF
