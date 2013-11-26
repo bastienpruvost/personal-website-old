@@ -69,13 +69,32 @@ body {
       list-style: none;
     }
     .entry {
+      padding-bottom: 30px;
       h3 {
         display: list-item;
+        list-style-image: url('/assets/arrow_down.png');
         font-size: 14px;
         font-weight: bold;
       }
       h4 {
         font-size: 12px;
+      }
+      .place {
+        display: inline;
+        a {
+        .label;
+        .label-primary;
+        }
+      }
+      .date {
+        .label;
+        .label-primary;
+      }
+      .description{
+        padding-top: 10px;
+      }
+      .tech {
+        text-decoration: underline;
       }
       .know-more{
         height: 32px;
@@ -83,65 +102,53 @@ body {
         background-image: url('/assets/know_more.png');
         float: right;
       }
+      .skill-container {
+        height:18px;
+        width:32%;
+        display:inline-block;
+        background:#eee;
+        margin-bottom:5px;
+        border: 1px solid @red2;
+      }
+      .skill {
+        height:17px;
+        background:@red2;
+        font-size:11px;
+        color:#fff;
+        border: 1px solid @red2;
+        padding:0 5px;
+        overflow: visible;
+        white-space: nowrap;
+      }
     }
-  }
-  .place {
-    .label;
-    .label-primary;
-  }
-  .description {
-    margin-bottom: 30px;
-  }
-  .date {
-    .label;
-    .label-primary;
-  }
-  .tech {
-    text-decoration: underline;
-  }
-  .skill-container {
-    height:18px;
-    width:32%;
-    display:inline-block;
-    background:#eee;
-    margin-bottom:5px;
-    border: 1px solid @red2;
-  }
-  .skill {
-    height:17px;
-    background:@red2;
-    font-size:11px;
-    color:#fff;
-    border: 1px solid @red2;
-    padding:0 5px;
-    overflow: visible;
-    white-space: nowrap;
   }
 }
 
-.form-group {
-  padding: 10px 0px;
-}
+
 
 .btn-bast {
   width: 70%;
   background-color: @red;
   color: white;
+  margin-bottom: 30px !important;
   &:hover {
     background-color: @red2;
     color: white !important;
   }
 }
 
-.parent_btn_bast {
-  text-align:center;
-  padding-bottom: 30px;
-}
-
 #map {
   margin: 40px 0px;
 }
 
+.form-group {
+  padding: 10px 0px;
+}
+
 #rightcol {
+  text-align: center;
+}
+
+.center {
   text-align: center;
 }

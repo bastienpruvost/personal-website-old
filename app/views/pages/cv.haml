@@ -1,5 +1,6 @@
 :javascript
-  $("#menu li a[href='/cv']").parent().addClass("active")
+  $("#menu li a[href='/cv']").parent().addClass("active");
+  $(function() {startCV();} );
 
 .resume
   #left_col.col-md-8
@@ -9,7 +10,8 @@
         %h3 Elève-Ingénieur de 4e année
         .info
           .date 2011 - 2012
-          .place IG2I 
+          .place
+            %a{href: "http://www.ig2i.fr"} IG2I
         .description 
           %a{href: "/ig2i"}
             .know-more
@@ -23,7 +25,8 @@
       .entry
         %h3 Ingénieur de Développement
         .date Depuis Fév. 2013
-        .place thredUP, San Francisco (USA)
+        .place
+          %a{href: "http://www.thredup.com"} thredUP, San Francisco (USA)
         .description
           Au sein d’une start-up dans le domaine de l’e-commerce, intégration d’une équipe d’ingénieurs en environnement Agile (Scrum) afin de participer à l’évolution continue du site web et des applications mobiles (Android & iOS)
           %br
@@ -36,7 +39,8 @@
       .entry
         %h3 Apprenti Ingénieur d'Etude
         .date 2013
-        .place Adictiz, Lille (59)
+        .place
+          %a{href: "http://www.adictiz.com"} Adictiz, Lille (59)
         .description
           Projet en 5e année de l'IG2I:
           %br
@@ -45,7 +49,8 @@
       .entry
         %h3 Apprenti Ingénieur d'Etudes et de Développement
         .date 2011 - 2012
-        .place Alten Nord, Villeneuve d'Ascq (59)
+        .place
+          %a{href: "http://www.alten.fr"} Alten Nord, Villeneuve d'Ascq (59)
         .description
           Stage d'apprenti-ingénieur d'une durée de 9 mois dont 7 en alternance, au sein de la DDPS (Direction des Projets Structurés):
           %ul
@@ -60,7 +65,8 @@
         %h3 Responsable Technique
         .info
           .date 2011
-          .place The Net Doctor, Atlanta (USA)
+          .place
+            %a{href: "http://www.netdr.net"} The Net Doctor, Atlanta (USA)
         .description
           Mission ponctuelle d'une durée de 5 semaines durant les vacances d'été :
           %br
@@ -72,7 +78,8 @@
         %h3 Technicien Réseau / Développeur
         .info
           .date 2011
-          .place The Net Doctor, Atlanta (USA)
+          .place
+            %a{href: "http://www.netr.net"} The Net Doctor, Atlanta (USA)
         .description
           Stage internationnal d'une durée de 3 mois :
           %br
@@ -83,7 +90,8 @@
         %h3 Développeur web
         .info
           .date 2010
-          .place Actemium Arras, Tilloy-les-Mofflaines (62)
+          .place
+            %a{href: "http://www.actemium.com"} Actemium Arras, Tilloy-les-Mofflaines (62)
         .description
           Stage technicien d'une durée de 3 mois :
           %br
@@ -102,7 +110,7 @@
 
   #right_col.col-md-4
     
-    .parent_btn_bast
+    .center
       %button.btn.btn-bast
         Download PDF Version
 
@@ -110,71 +118,72 @@
       %h2 Compétences
       .entry
         %h3 Informatique
-        .info
-          %h4 Web
-          .skill-container
-            .skill{style: "width: 95%;"} HTML5
-          .skill-container
-            .skill{style: "width: 90%;"} CSS3
-          .skill-container
-            .skill{style: "width: 85%;"} JavaScript
-          .skill-container
-            .skill{style: "width: 85%;"} JQuery
-          .skill-container
-            .skill{style: "width: 85%;"} AJAX
-          %br
-          %br
-          .skill-container
-            .skill{style: "width: 80%;"} Ruby on Rails
-          .skill-container
-            .skill{style: "width: 50%;"} JEE
-          .skill-container
-            .skill{style: "width: 50%;"} ASP.net
-          .skill-container
-            .skill{style: "width: 40%;"} PHP
+        .description
+          .skillset
+            %h4 Web
+            .skill-container
+              .skill{style: "width: 95%;"} HTML5
+            .skill-container
+              .skill{style: "width: 90%;"} CSS3
+            .skill-container
+              .skill{style: "width: 85%;"} JavaScript
+            .skill-container
+              .skill{style: "width: 85%;"} JQuery
+            .skill-container
+              .skill{style: "width: 85%;"} AJAX
+            %br
+            %br
+            .skill-container
+              .skill{style: "width: 80%;"} Ruby on Rails
+            .skill-container
+              .skill{style: "width: 50%;"} JEE
+            .skill-container
+              .skill{style: "width: 50%;"} ASP.net
+            .skill-container
+              .skill{style: "width: 40%;"} PHP
 
-        .info
-          %h4 Langages
-          .skill-container
-            .skill{style: "width: 70%;"} Java
-          .skill-container
-            .skill{style: "width: 60%;"} C
-          .skill-container
-            .skill{style: "width: 40%;"} C++
-          .skill-container
-            .skill{style: "width: 50%;"} VB.NET
-          .skill-container
-            .skill{style: "width: 50%;"} C#.NET
+          .skillset
+            %h4 Langages
+            .skill-container
+              .skill{style: "width: 70%;"} Java
+            .skill-container
+              .skill{style: "width: 60%;"} C
+            .skill-container
+              .skill{style: "width: 40%;"} C++
+            .skill-container
+              .skill{style: "width: 50%;"} VB.NET
+            .skill-container
+              .skill{style: "width: 50%;"} C#.NET
 
-        .info
-          %h4 Mobile
-          .skill-container
-            .skill{style: "width: 60%;"} Android
-          .skill-container
-            .skill{style: "width: 40%;"} iOS
+          .skillset
+            %h4 Mobile
+            .skill-container
+              .skill{style: "width: 60%;"} Android
+            .skill-container
+              .skill{style: "width: 40%;"} iOS
 
-        .info
-          %h4 CMS
-          .skill-container
-            .skill{style: "width: 80%;"} Wordpress
-          .skill-container
-            .skill{style: "width: 50%;"} Joomla
+          .skillset
+            %h4 CMS
+            .skill-container
+              .skill{style: "width: 80%;"} Wordpress
+            .skill-container
+              .skill{style: "width: 50%;"} Joomla
 
-        .info
-          %h4 BDD
-          .skill-container
-            .skill{style: "width: 55%;"} MySQL
-          .skill-container
-            .skill{style: "width: 50%;"} SQL Server
-          .skill-container
-            .skill{style: "width: 30%;"} Access
+          .skillset
+            %h4 BDD
+            .skill-container
+              .skill{style: "width: 55%;"} MySQL
+            .skill-container
+              .skill{style: "width: 50%;"} SQL Server
+            .skill-container
+              .skill{style: "width: 30%;"} Access
 
-        .info
-          %h4 Méthodes
-          .skill-container
-            .skill{style: "width: 60%;"} Merise
-          .skill-container
-            .skill{style: "width: 60%;"} UML
+          .skillset
+            %h4 Méthodes
+            .skill-container
+              .skill{style: "width: 60%;"} Merise
+            .skill-container
+              .skill{style: "width: 60%;"} UML
       
       .entry
         %h3 Gestion de Projet
