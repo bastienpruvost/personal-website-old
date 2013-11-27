@@ -48,4 +48,13 @@ function startPortfolio() {
   }, function(){
     $(this).find(".hover_message").hide();
   });
+
+  resizePortfolioContainer();
+  $(window).resize(function() { resizePortfolioContainer(); });
+}
+
+function resizePortfolioContainer() {
+  var ref = Math.min($("#container").width(), 1060)
+  var result = Math.floor(ref / 210)*210
+  $(".portfolioContainer").width(result);
 }

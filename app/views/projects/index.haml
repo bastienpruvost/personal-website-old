@@ -1,5 +1,7 @@
 :javascript
-  $("#menu li a[href='/projets']").parent().addClass("active")
+  $("#menu li a[href='/projects']").parent().addClass("active")
+
+#test
 
 .portfolioFilter
   %a.current{href: "#", "data-filter" => "*"}
@@ -16,22 +18,23 @@
 .portfolioContainer#portfolio
   .item.web
     .hover_message="En savoir plus"
-    %img{src: "http://placehold.it/150x250"}
+    %a{href: "/projects/1"}
+      %img.img_responsive{src: "http://placehold.it/200x200"}
   .item.android
     .hover_message="En savoir plus"
-    %img{src: "http://placehold.it/150x250"}
+    %img.img_responsive{src: "http://placehold.it/200x200"}
   .item.web
     .hover_message="En savoir plus"
-    %img{src: "http://placehold.it/150x250"}
+    %img.img_responsive{src: "http://placehold.it/200x200"}
   .item.ios
     .hover_message="En savoir plus"
-    %img{src: "http://placehold.it/150x250"}
+    %img.img_responsive{src: "http://placehold.it/200x200"}
   .item.desktop
     .hover_message="En savoir plus"
-    %img{src: "http://placehold.it/150x250"}
+    %img.img_responsive{src: "http://placehold.it/200x200"}
   .item.web
     .hover_message="En savoir plus"
-    %img{src: "http://placehold.it/150x250"}
+    %img.img_responsive{src: "http://placehold.it/200x200"}
 
 
 :javascript

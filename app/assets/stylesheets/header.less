@@ -1,6 +1,28 @@
 @import "mixins";
 @import "colors";
 
+@font-face {
+  font-family: 'FeliX';
+  src: url('/assets/FeliX.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#logo {
+  font-family: "FeliX";
+  font-size: 34px;
+  .firstname {
+    display: inline;
+    color: @red;
+    padding: 0px;
+  }
+  .lastname {
+    display:inline;
+    color: @red2;
+    padding: 0px;
+  }
+}
+
 #top_row {
   padding: 10px;
 }

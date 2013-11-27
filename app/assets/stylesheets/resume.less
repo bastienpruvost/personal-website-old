@@ -1,0 +1,89 @@
+@import "main";
+@import "colors";
+@import "mixins";
+@import "twitter/bootstrap";
+
+.resume {
+  #left_col {
+    padding-right: 30px;
+    margin: 0px;
+  }
+  #right_col {
+    margin: 0px;
+  }
+  .category {
+    margin-bottom: 40px;
+    h2 {
+      .place > .box-title;
+      margin-bottom: 25px;
+      font-size: 18px;
+      list-style: none;
+    }
+    .entry {
+      padding-bottom: 30px;
+      h3 {
+        display: list-item;
+        cursor: pointer;
+        list-style-image: url('/assets/arrow_down.png');
+        list-style-position: inside;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      h4 {
+        font-size: 12px;
+      }
+      .place {
+        display: inline;
+        a {
+        .label;
+        .label-primary;
+        }
+      }
+      .date {
+        .label;
+        .label-primary;
+      }
+      .description{
+        padding-top: 10px;
+      }
+      .tech {
+        text-decoration: underline;
+      }
+      .know-more{
+        height: 32px;
+        width: 32px;
+        background-image: url('/assets/know_more.png');
+        float: right;
+      }
+      .skill-container {
+        height:18px;
+        width:32%;
+        display:inline-block;
+        background:#eee;
+        margin-bottom:5px;
+        border: 1px solid @red2;
+      }
+      .skill {
+        height:17px;
+        background:@red2;
+        font-size:11px;
+        color:#fff;
+        border: 1px solid @red2;
+        padding:0 5px;
+        overflow: visible;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.btn-bast {
+  width: 70%;
+  background-color: @red;
+  color: white;
+  margin-bottom: 30px !important;
+  &:hover {
+    background-color: @red2;
+    color: white !important;
+  }
+}

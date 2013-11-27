@@ -19,5 +19,6 @@
 
  *= require header
  *= require main
- *= require cv
+ *= require resume
+ *= require project
  */
