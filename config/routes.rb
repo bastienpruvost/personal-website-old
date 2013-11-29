@@ -28,11 +28,11 @@ Bastienpruvost::Application.routes.draw do
   get '/projects/bda-site',           :to => "projects#bda-site"
   get '/projects/bda-projets',        :to => "projects#bda-projets"
 
-  get '/projects/tnd-wordpress',      :to => "projects#tnd-wordpress"
-  get '/projects/tnd-bpack',          :to => "projects#tnd-bpack"
   get '/projects/tnd-francoisandco',  :to => "projects#tnd-francoisandco"
+  get '/projects/tnd-bpack',          :to => "projects#tnd-bpack"
+  get '/projects/tnd-wordpress',      :to => "projects#tnd-wordpress"
   
-  get '/projects/actemium-dalkia',    :to => "projects#actemium_dalkia"
+  get '/projects/actemium-dalkia',    :to => "projects#actemium-dalkia"
   get '/projects/pinf',               :to => "projects#pinf"
 
 end
