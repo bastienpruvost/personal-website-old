@@ -3,12 +3,20 @@
 @import "mixins";
 @import "custom_bootstrap/custom_bootstrap";
 
+.bast-label {
+  display: inline;
+  font-weight: bold;
+  color: @red;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .resume {
   #left_col {
-    padding-right: 30px;
+    padding-right: 50px;
     margin: 0px;
   }
   #right_col {
+    padding-left: 30px;
     margin: 0px;
   }
   .category {
@@ -35,13 +43,11 @@
       .place {
         display: inline;
         a {
-        .label;
-        .label-primary;
+          .bast-label;
         }
       }
       .date {
-        .label;
-        .label-primary;
+        .bast-label;
       }
       .description{
         padding-top: 10px;
@@ -57,10 +63,11 @@
       }
       .skill-container {
         height:18px;
-        width:32%;
+        width:30%;
+        margin-right: 2%;
         display:inline-block;
         background:#eee;
-        margin-bottom:5px;
+        margin-bottom:8px;
         border: 1px solid @red2;
       }
       .skill {

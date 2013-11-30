@@ -21,16 +21,26 @@
 }
 
 .item {
-  background-color: black;
-  margin: 5px;
+  height: 180px;
+  width: 180px;
+  margin: 15px;
+  border:1px solid @grey;
   .hover_message {
     display:none;
+    background-color: @darkgrey;
     position: absolute;
     text-align: center;
-    text-decoration: underline;
+    .link {text-decoration: underline;}
+    .title {
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
     width: 100%;
     color: white;
-    top: 110px;
+    bottom: 0px;
+    height:40%;
+    padding-top: 10px;
+    .opacity(0.9);
   }
   img {
     margin:0px;
@@ -38,7 +48,6 @@
     height: auto;
   }
   img:hover {
-    .opacity();
     cursor: pointer;
   }
 }
