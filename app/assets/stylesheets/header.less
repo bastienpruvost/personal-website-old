@@ -1,5 +1,6 @@
 @import "mixins";
 @import "colors";
+@import "custom_bootstrap/custom_bootstrap";
 
 @font-face {
   font-family: 'FeliX';
@@ -105,5 +106,19 @@
   }
   .googleplus {
     background-image: url('/assets/social_icons/googleplus.png');
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  #header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0px;
+  height: 58px;
+  z-index: 10;
+  }
+  body {
+    padding-top: 120px;
   }
 }
