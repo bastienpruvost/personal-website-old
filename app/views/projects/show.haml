@@ -1,0 +1,12 @@
+:javascript
+  $("#menu li a[href='/projects']").parent().addClass("active")
+
+#left_col{class: "col-md-"+(12 - @img_col_width).to_s}
+  #name= @project.title
+  #project_presentation
+    = render file: "projects/description_partials/#{@project.common_name}"
+
+
+- if @project.image
+  #right_col{class: "col-md-"+@img_col_width.to_s}
+    %img.img-responsive{src: "/assets/projects/large/"+@project.image[:src]}

@@ -9,22 +9,7 @@ Bastienpruvost::Application.routes.draw do
   get  '/contact' => 'contact#new', :as => 'contact'
   post '/contact' => 'contact#create'
 
-  get '/projects',                    :to => "projects#index"
-  get '/projects/thredup-website',    :to => "projects#thredup-website"
-  get '/projects/thredup-ios',        :to => "projects#thredup-ios"
-  get '/projects/thredup-android',    :to => "projects#thredup-android"
-  get '/projects/portfolio',          :to => "projects#portfolio"
-  get '/projects/prp',                :to => "projects#prp"
-  get '/projects/prt',                :to => "projects#prt"
-  get '/projects/alten-atexis',       :to => "projects#alten-atexis"
-  get '/projects/alten-quizz',        :to => "projects#alten-quizz"
-  get '/projects/alten-rao',          :to => "projects#alten-rao"
-  get '/projects/bda-site',           :to => "projects#bda-site"
-  get '/projects/bda-projets',        :to => "projects#bda-projets"
-  get '/projects/tnd-francoisandco',  :to => "projects#tnd-francoisandco"
-  get '/projects/tnd-bpack',          :to => "projects#tnd-bpack"
-  get '/projects/tnd-wordpress',      :to => "projects#tnd-wordpress"
-  get '/projects/actemium-dalkia',    :to => "projects#actemium-dalkia"
-  get '/projects/pinf',               :to => "projects#pinf"
+  get '/projects',       :to => "projects#index"
+  get '/projects/:name', :to => "projects#show"
 
 end

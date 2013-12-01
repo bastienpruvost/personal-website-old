@@ -14,118 +14,13 @@
     Gestion de Projet / Etudes
 
 .portfolioContainer#portfolio
-  .item.web
-    .hover_message
-      .title Portfolio
-      .link= @message
-    %a{href: "/projects/portfolio"}
-      %img.img_responsive{src: "/assets/projects/thumb/portfolio.png"}
-
-  .item.web
-    .hover_message
-      .title thredUP - Website
-      .link= @message
-    %a{href: "/projects/thredup-website"}
-      %img.img_responsive{src: "/assets/projects/thumb/thredup-website.png"}
-
-  .item.mobile
-    .hover_message
-      .title thredUP - Android
-      .link= @message
-    %a{href: "/projects/thredup-android"}
-      %img.img_responsive{src: "/assets/projects/thumb/thredup-android.png"}
-
-  .item.mobile
-    .hover_message
-      .title thredUP - iOS
-      .link= @message
-    %a{href: "/projects/thredup-ios"}
-      %img.img_responsive{src: "/assets/projects/thumb/thredup-ios.png"}
-
-  .item.gp
-    .hover_message
-      .title IG2I - PRP
-      .link= @message
-    %a{href: "/projects/prp"}
-      %img.img_responsive{src: "/assets/projects/thumb/prp.png"}
-
-  .item.gp.web
-    .hover_message
-      .title IG2I - PRT
-      .link= @message
-    %a{href: "/projects/prt"}
-      %img.img_responsive{src: "/assets/projects/thumb/prt.png"}
-
-  .item.web
-    .hover_message
-      .title Alten - Quizz
-      .link= @message
-    %a{href: "/projects/alten-quizz"}
-      %img.img_responsive{src: "/assets/projects/thumb/alten-quizz.png"}
-
-  .item.desktop
-    .hover_message
-      .title Alten - Atexis
-      .link= @message
-    %a{href: "/projects/alten-atexis"}
-      %img.img_responsive{src: "/assets/projects/thumb/alten-atexis.png"}
-
-  .item.gp
-    .hover_message
-      .title Alten - RAO
-      .link= @message
-    %a{href: "/projects/alten-rao"}
-      %img.img_responsive{src: "/assets/projects/thumb/alten-rao.png"}
-
-  .item.gp
-    .hover_message
-      .title BDA - Projets
-      .link= @message
-    %a{href: "/projects/bda-projets"}
-      %img.img_responsive{src: "/assets/projects/thumb/bda-projets.png"}
-
-  .item.web
-    .hover_message
-      .title BDA - Site
-      .link= @message
-    %a{href: "/projects/bda-site"}
-      %img.img_responsive{src: "/assets/projects/thumb/bda-site.png"}
-
-  .item.web.gp
-    .hover_message
-      .title TND - F&Co
-      .link= @message
-    %a{href: "/projects/tnd-francoisandco"}
-      %img.img_responsive{src: "/assets/projects/thumb/tnd-francoisandco.png"}
-
-  .item.web
-    .hover_message
-      .title TND - BPack
-      .link= @message
-    %a{href: "/projects/tnd-bpack"}
-      %img.img_responsive{src: "/assets/projects/thumb/tnd-bpack.png"}
-
-  .item.web.gp
-    .hover_message
-      .title TND - Wordpress
-      .link= @message
-    %a{href: "/projects/tnd-wordpress"}
-      %img.img_responsive{src: "/assets/projects/thumb/tnd-wordpress.png"}
-
-  .item.web
-    .hover_message
-      .title Actemium - Dalkia
-      .link= @message
-    %a{href: "/projects/actemium-dalkia"}
-      %img.img_responsive{src: "/assets/projects/thumb/actemium-dalkia.png"}
-
-  .item.web.gp
-    .hover_message
-      .title IG2I - PINF
-      .link= @message
-    %a{href: "/projects/pinf"}
-      %img.img_responsive{src: "/assets/projects/thumb/pinf.png"}
-  
+  - @projects.each do |p|
+    .item{class: p.skills.join(", ")}
+      .hover_message
+        .title= p.title
+        .link En savoir plus &raquo;
+      %a{href: "/projects/"+p.common_name}
+        %img.img_responsive{src: "/assets/projects/thumb/"+p.image_thumbnail[:src].to_s}
 
 
 :javascript
