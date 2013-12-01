@@ -3,16 +3,26 @@
 @import "mixins";
 @import "custom_bootstrap/custom_bootstrap";
 
-.bast-label {
+.custom-label {
   display: inline;
   font-weight: bold;
   white-space: nowrap;
-  color: @main2;
   font-size: 0.85em;
-  border: 1px solid @main2;
   .rounded(10px);
   padding: 0px 8px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.blue-label {
+  .custom-label;
+  border: 1px solid @main2;
+  color: @main2;
+}
+
+.green-label {
+  .custom-label;
+
+  color: @main;
 }
 
 .resume {
@@ -48,17 +58,29 @@
       .place {
         display: inline;
         a {
-          .bast-label;
+          .blue-label;
         }
       }
       .date {
-        .bast-label;
+        .blue-label;
       }
       .description{
         padding-top: 10px;
       }
+      .also {
+        .text {
+          display: inline;
+          font-size: 0.9em;
+          font-style: italic;
+        }
+        a {
+          font-size: 0.9em;
+          font-weight: bold;
+        }
+      }
       .tech {
         text-decoration: underline;
+        display: inline;
       }
       .know-more{
         height: 32px;

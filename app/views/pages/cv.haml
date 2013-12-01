@@ -16,44 +16,61 @@
           .place
             %a{href: "http://www.ig2i.fr"} IG2I
         .description 
-          %a.hidden-print{href: "/ig2i"}
-            .know-more
           Institut de Génie Informatique et Industriel. Ecole d'ingénieurs département de l'Ecole Centrale de Lille. Option Génie Informatique.
+          .also
+            .text Détails :
+            %a{href: "/ig2i"} IG2I
       .entry
         %h3 Baccalauréat Scientifique
-        .date 2007
+        .info
+          .date 2007
 
     .experience.category
       %h2 Experiences Professionnelles
       .entry
         %h3 Ingénieur de Développement
-        .date Depuis Fév. 2013
-        .place
-          %a{href: "http://www.thredup.com"} thredUP, San Francisco (USA)
+        .info
+          .date Depuis Fév. 2013
+          .place
+            %a{href: "http://www.thredup.com"} thredUP, San Francisco (USA)
         .description
           Au sein d’une start-up dans le domaine de l’e-commerce, intégration d’une équipe d’ingénieurs en environnement Agile (Scrum) afin de participer à l’évolution continue du site web et des applications mobiles (Android & iOS)
           %br
-          %br
-          .tech Env. Technique : 
-          Ruby on Rails, HAML, SASS, BackboneJS, JQuery, CoffeeScript, Android (Java SDK), iOS (Objective-C SDK)
+          %p
+            .tech Env. Technique : 
+            Ruby on Rails, HAML, SASS, BackboneJS, JQuery, CoffeeScript, Android (Java SDK), iOS (Objective-C SDK)
+          .also
+            .text Détails :
+            %a{href: "/projects/thredup-website"} Projet Web
+            = " - "
+            %a{href: "/projects/thredup-android"} Projet Android
+            = " - "
+            %a{href: "/projects/thredup-ios"} Projet iOS
 
 
 
       .entry
         %h3 Apprenti Ingénieur d'Etude
-        .date 2013
-        .place
-          %a{href: "http://www.adictiz.com"} Adictiz, Lille (59)
+        .info
+          .date 2013
+          .place
+            %a{href: "http://www.adictiz.com"} Adictiz, Lille (59)
         .description
           Projet en 5e année de l'IG2I:
           %br
           Réalisation d’une étude complète (Etude de Marché, Benchmark, Dossiers de spécifications…) ayant pour objectif de cadrer le meilleur outil de développement de jeux vidéo pour l’entreprise, au sein d’une équipe projet de 7 personnes.
+          %br
+          %br
+          .also
+            .text Détails :
+            %a{href: "/projects/prp"} Projet Partenaire
 
       .entry
         %h3 Apprenti Ingénieur d'Etudes et de Développement
-        .date 2011 - 2012
-        .place
-          %a{href: "http://www.alten.fr"} Alten Nord, Villeneuve d'Ascq (59)
+        .info
+          .date 2011 - 2012
+          .place
+            %a{href: "http://www.alten.fr"} Alten Nord, Villeneuve d'Ascq (59)
         .description
           Stage d'apprenti-ingénieur d'une durée de 9 mois dont 7 en alternance, au sein de la DDPS (Direction des Projets Structurés):
           %ul
@@ -62,8 +79,16 @@
               Etudes fonctionnelles et techniques détaillées ; Etudes de faisabilité et prototypages ; Estimation de charges ; Veille technologique.
             %li 
               Intervention sur les phases de réalisation des projets (recueil des besoins, conception, développement, déploiement...). Utilisation de méthodologies de gestion de projet agiles.
-          .tech Env. Technique : 
-          C# / ASP.net + études sur de nombreux langages, CMS etc…
+          %p
+            .tech Env. Technique : 
+            C# / ASP.net + études sur de nombreux langages, CMS etc…
+          .also
+            .text Détails :
+            %a{href: "/projects/alten-rao"} Réponses à Appels d'Offres
+            = " - "
+            %a{href: "/projects/alten-quizz"} Projet Quizz
+            = " - "
+            %a{href: "/projects/alten-atexis"} Projet Atexis
       .entry
         %h3 Responsable Technique
         .info
@@ -75,8 +100,12 @@
           %br
           Restructuration et optimisation d’un site web client basé sur un CMS privé.
           Identification des besoins, documentation et formation des futurs utilisateurs.
-          .tech Env. Technique : 
-          PHP
+          %p
+            .tech Env. Technique : 
+            PHP
+          .also
+            .text Détails :
+            %a{href: "/projects/tnd-francoisandco"} Projet F&Co
       .entry
         %h3 Technicien Réseau / Développeur
         .info
@@ -87,8 +116,14 @@
           Stage internationnal d'une durée de 3 mois :
           %br
           Relation clients (analyse des besoins, suivi de projets, support technique), implémentation de systèmes informatiques (outils collaboratifs, systèmes VoIP), réalisation de sites web utilisant différents CMS, Search Engine Optimization.
-          .tech Env. Technique : 
-          Très varié (Wordpress, Joomla, PHP…)
+          %p
+            .tech Env. Technique : 
+            Très varié (Wordpress, Joomla, PHP…)
+          .also
+            .text Détails :
+            %a{href: "/projects/tnd-bpack"} Projet BPack
+            = " - "
+            %a{href: "/projects/tnd-wordpress"} Projets WP
       .entry
         %h3 Développeur web
         .info
@@ -99,8 +134,12 @@
           Stage technicien d'une durée de 3 mois :
           %br
           Réalisation d’une Interface Homme-Machine de gestion d’alarmes automatisées sous forme d’un site web utilisé en Intranet.
-          .tech Env. Technique :
-          PHP, JQuery, AJAX
+          %p
+            .tech Env. Technique :
+            PHP, JQuery, AJAX
+          .also
+            .text Détails :
+            %a{href: "/projects/actemium-dalkia"} Projet Dalkia
       .entry
         %h3 Développeur web
         .info
@@ -108,8 +147,12 @@
         .description
           Projet Informatique (2e année IG2I):
           Gestion de projet : Analyse, conception et développement du site web d’une association (utilisé à des fins de gestion des adhérents et des activités) au sein d’une équipe de 6 personnes.
-          .tech Env. Technique : 
-          PHP
+          %p
+            .tech Env. Technique : 
+            PHP
+          .also
+            .text Détails :
+            %a{href: "/projects/pinf"} Projet Info
 
   #right_col.col-md-4
     .category.center.pdf.visible-md.visible-lg
@@ -211,6 +254,9 @@
         %h3 Vie associative
         .description
           Fondateur et responsable de 2zik, pôle musical du Bureau des Arts (association artistique de l’IG2I), puis Président du Bureau des Arts (jusqu’en 2013).
+          .also
+            .text Détails :
+            %a{href: "/projects/bda-projets"} BDA
 
 
       .entry
