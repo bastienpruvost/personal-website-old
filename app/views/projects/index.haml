@@ -1,6 +1,10 @@
 :javascript
   $("#menu li a[href='/projects']").parent().addClass("active")
 
+- flash.each do |name, msg|
+  .error.center
+    = msg
+
 .portfolioFilter
   %a.current{href: "#", "data-filter" => "*"}
     Toutes Categories

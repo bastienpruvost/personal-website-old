@@ -1,6 +1,9 @@
 :javascript
   $("#menu li a[href='/contact']").parent().addClass("active")
 
+- flash.each do |name, msg|
+  .error.center
+    = msg
 
 .col-md-6.absolute_center
   %h3 Me contacter
@@ -27,8 +30,7 @@
 
     .form-group
       = form.submit "Envoyer", :class => "btn btn-default"
-      - flash.each do |name, msg|
-        = content_tag :span, msg, class: name
+
 .col-md-6.center
   %img#map.img-responsive{src: "/assets/map.jpg"}
   .col-sm-6
