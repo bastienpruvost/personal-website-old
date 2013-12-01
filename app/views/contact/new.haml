@@ -5,7 +5,7 @@
   .error.center
     = msg
 
-.col-md-6.absolute_center
+.col-md-9.absolute_center
   %h3 Me contacter
   =form_for @message, :class => "form-horizontal", :url => contact_path do |form|
     .form-group
@@ -31,15 +31,11 @@
     .form-group
       = form.submit "Envoyer", :class => "btn btn-default"
 
-.col-md-6.center
-  %img#map.img-responsive{src: "/assets/map.jpg"}
-  .col-sm-6
-    Bastien PRUVOST 
-    %br
-    251 rue Faidherbe 
-    %br
-    62400 Béthune 
-  .col-sm-6
-    bastien.pruvost@gmail.com 
-    %br
-    +33 6 61 66 44 74 
+.col-md-3.center
+  %h3 Informations
+  %br
+  251 rue Faidherbe,62400 Béthune 
+  %br
+  bastien.pruvost@gmail.com 
+  %br
+  +33 6 51 66 44 74 
