@@ -6,17 +6,22 @@
 .bast-label {
   display: inline;
   font-weight: bold;
-  color: @main;
+  white-space: nowrap;
+  color: @main2;
+  font-size: 0.85em;
+  border: 1px solid @main2;
+  .rounded(10px);
+  padding: 0px 8px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .resume {
   #left_col {
-    padding-right: 50px;
+    @media (min-width: @screen-md-min) { padding-right: 40px; }
     margin: 0px;
   }
   #right_col {
-    padding-left: 30px;
+    @media (min-width: @screen-md-min) { padding-left: 40px; }
     margin: 0px;
   }
   .category {
@@ -85,12 +90,17 @@
 }
 
 .btn-bast {
-  width: 70%;
+  padding: 0px 30px;
   background-color: @main;
   color: white;
-  margin-bottom: 30px !important;
   &:hover {
     background-color: @main2;
     color: white !important;
   }
+}
+
+.pdf > .hidden-print {
+  border: 1px solid @lightgrey;
+  padding: 10px;
+  .rounded(10px);
 }

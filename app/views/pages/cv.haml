@@ -4,8 +4,11 @@
 
 .resume
   #left_col.col-md-8
+    .category.center.pdf.visible-xs.visible-sm
+      = render partial: "printcv"
+
     .education.category
-      %h2 Education
+      %h2 Formation
       .entry
         %h3 Elève-Ingénieur de 4e année
         .info
@@ -13,7 +16,7 @@
           .place
             %a{href: "http://www.ig2i.fr"} IG2I
         .description 
-          %a{href: "/ig2i"}
+          %a.hidden-print{href: "/ig2i"}
             .know-more
           Institut de Génie Informatique et Industriel. Ecole d'ingénieurs département de l'Ecole Centrale de Lille. Option Génie Informatique.
       .entry
@@ -109,9 +112,8 @@
           PHP
 
   #right_col.col-md-4
-    .center
-      %button.btn.btn-bast
-        Download PDF Version
+    .category.center.pdf.visible-md.visible-lg
+      = render partial: "printcv"
 
     .skills.category
       %h2 Compétences
@@ -215,6 +217,7 @@
         %h3 Loisirs
         .description
           Musique: Guitariste (8 ans) + pratique de divers instruments en amateur
+          %br
           Sports   –   Cinéma   –   Informatique   –   Voyages
 
     .references.category
