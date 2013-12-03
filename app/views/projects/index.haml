@@ -1,33 +1,34 @@
 :javascript
   $("#menu li a[href='/projects']").parent().addClass("active")
 
-- flash.each do |name, msg|
-  .error.center
-    = msg
+#container.container
+  - flash.each do |name, msg|
+    .error.center
+      = msg
 
-.portfolioFilter
-  %a.current{href: "#", "data-filter" => "*"}
-    Toutes Categories
-  %a{href: "#", "data-filter" => ".web"}
-    Web
-  %a{href: "#", "data-filter" => ".mobile"}
-    Mobile
-  %a{href: "#", "data-filter" => ".desktop"}
-    Desktop
-  %a{href: "#", "data-filter" => ".gp"}
-    Gestion de Projet / Etudes
+  .portfolioFilter
+    %a.current{href: "#", "data-filter" => "*"}
+      Toutes Categories
+    %a{href: "#", "data-filter" => ".web"}
+      Web
+    %a{href: "#", "data-filter" => ".mobile"}
+      Mobile
+    %a{href: "#", "data-filter" => ".desktop"}
+      Desktop
+    %a{href: "#", "data-filter" => ".gp"}
+      Gestion de Projet / Etudes
 
-.portfolioContainer#portfolio
-  - @projects.each do |p|
-    .item{class: p.skills.join(", ")}
-      .hover_message
-        .title= p.title
-        .link En savoir plus &raquo;
-      %a{href: "/projects/"+p.common_name}
-        %img.img_responsive{src: "/assets/projects/thumb/"+p.image_thumbnail[:src].to_s}
+  .portfolioContainer#portfolio
+    - @projects.each do |p|
+      .item{class: p.skills.join(", ")}
+        .hover_message
+          .title= p.title
+          .link En savoir plus &raquo;
+        %a{href: "/projects/"+p.common_name}
+          %img.img_responsive{src: "/assets/projects/thumb/"+p.image_thumbnail[:src].to_s}
 
 
-:javascript
-  $(window).load(function(){
-    startPortfolio();
-  });
+  :javascript
+    $(window).load(function(){
+      startPortfolio();
+    });

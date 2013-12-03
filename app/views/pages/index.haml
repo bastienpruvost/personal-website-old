@@ -1,70 +1,74 @@
 :javascript
   $("#menu li a[href='/']").parent().addClass("active")
 
-.row
+#container.container
+  #img-home.center
+    %img.img-responsive{src: "/assets/home.png"}
+      
+#container.container
+  .row
+    #intro.col-md-12
+      .woaw
+        Bienvenue!
+      %br
+      Bonjour et bienvenue sur mon site personnel !
+      %br
+      Je m'appelle Bastien, j'ai 24 ans et je suis 
+      .important ingénieur 
+      et auto-entrepreneur spécialisé en
+      .important génie informatique.
+      %br
+      En espérant que vous trouverez sur ce site les informations que vous recherchez, je vous souhaite une bonne navigation !
 
-  #intro.container
-    .woaw
-      Bienvenue!
-    %br
-    Bonjour et bienvenue sur mon site personnel !
-    %br
-    Je m'appelle Bastien, j'ai 24 ans et je suis 
-    .important ingénieur 
-    et auto-entrepreneur spécialisé en
-    .important génie informatique.
-    %br
-    En espérant que vous trouverez sur ce site les informations que vous recherchez, je vous souhaite une bonne navigation !
-
-  .col-md-4
-    .place
-      .box-title
-        Qui Suis-Je ?
-      .box
-        Ingénieur récemment diplômé de l'
-        .important IG2I
-        (département de l'Ecole Centrale de Lille), j'ai rapidement décidé d'orienter ma carrière professionnelle autour des nouvelles technologies du 
-        .important web. 
-        %br
-        %br
-        Passionné par mon métier, je me tiens naturellement au courant de ses évolutions, à la fois au niveau technique et des méthodes de travail ou de gestion de projets, convaincu que c'est dans cette adaptabilité que ce situe la force d'un ingénieur.
+    .col-md-4
+      .place
+        .box-title
+          Qui Suis-Je ?
+        .box
+          Ingénieur récemment diplômé de l'
+          .important IG2I
+          (département de l'Ecole Centrale de Lille), j'ai rapidement décidé d'orienter ma carrière professionnelle autour des nouvelles technologies du 
+          .important web. 
+          %br
+          %br
+          Passionné par mon métier, je me tiens naturellement au courant de ses évolutions, à la fois au niveau technique et des méthodes de travail ou de gestion de projets, convaincu que c'est dans cette adaptabilité que ce situe la force d'un ingénieur.
 
 
-  .col-md-4
-    .place
-      .box-title
-        Ce site
-      .box
-        Ici, vous trouverez:
-        %ul
-          %li 
-            mon 
-            %a{href: "/cv"} Curriculum Vitae
-          %li 
-            des exemples de 
-            %a{href: "/projects"} projets 
-            sur lesquels j'ai pu travailler
-          %li 
-            (bientôt) un 
-            %a{href: "/blog"} blog
-          %li 
-            un formulaire de 
-            %a{href: "/contact"} contact
-            , pour toute suggestion, renseignement...
+    .col-md-4
+      .place
+        .box-title
+          Ce site
+        .box
+          Ici, vous trouverez:
+          %ul
+            %li 
+              mon 
+              %a{href: "/cv"} Curriculum Vitae
+            %li 
+              des exemples de 
+              %a{href: "/projects"} projets 
+              sur lesquels j'ai pu travailler
+            %li 
+              (bientôt) un 
+              %a{href: "/blog"} blog
+            %li 
+              un formulaire de 
+              %a{href: "/contact"} contact
+              , pour toute suggestion, renseignement...
 
-  .col-md-4
-    .place
-      .box-title
-        %img.warning{src: "/assets/warning.png"}
-        Collaborons !
-      .box
-        Je suis actuellement en 
-        .important recherche d'un poste 
-        dans la région Rhône-Alpes (idéalement autour de technologies Ruby on Rails, mais je reste à l'écoute de toute opportunité).
-        %br
-        Je porte notamment un intérêt particulier aux projets innovants, aux méthodologies de gestion de projet Agiles, ainsi qu'à l'optimisation du travail en équipe.
-        %br
-        %br
-        Si mon profil vous intéresse, n'hésitez pas à 
-        %a{href: "/contact"} me contacter 
-        afin que nous puissions en discuter!
+    .col-md-4
+      .place
+        .box-title
+          %img.warning{src: "/assets/warning.png"}
+          Collaborons !
+        .box
+          Je suis actuellement en 
+          .important recherche d'un poste 
+          dans la région Rhône-Alpes (idéalement autour de technologies Ruby on Rails, mais je reste à l'écoute de toute opportunité).
+          %br
+          Je porte notamment un intérêt particulier aux projets innovants, aux méthodologies de gestion de projet Agiles, ainsi qu'à l'optimisation du travail en équipe.
+          %br
+          %br
+          Si mon profil vous intéresse, n'hésitez pas à 
+          %a{href: "/contact"} me contacter 
+          afin que nous puissions en discuter!

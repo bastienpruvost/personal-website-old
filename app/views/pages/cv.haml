@@ -2,271 +2,272 @@
   $("#menu li a[href='/cv']").parent().addClass("active");
   $(function() {startCV();} );
 
-.resume
-  #left_col.col-md-8
-    .category.center.pdf.visible-xs.visible-sm
-      = render partial: "printcv"
+#container.container
+  .row.resume
+    #left_col.col-md-8
+      .category.center.pdf.visible-xs.visible-sm
+        = render partial: "printcv"
 
-    .education.category
-      %h2 Formation
-      .entry
-        %h3 Diplôme d'ingénieur
-        .info
-          .date 2011 - 2012
-          .place
-            %a{href: "http://www.ig2i.fr"} IG2I
-        .description 
-          Institut de Génie Informatique et Industriel. Ecole d'ingénieurs département de l'Ecole Centrale de Lille. Option Génie Informatique.
-          .also
-            .text Détails :
-            %a{href: "/ig2i"} IG2I
-      .entry
-        %h3 Baccalauréat Scientifique
-        .info
-          .date 2007
+      .education.category
+        %h2 Formation
+        .entry
+          %h3 Diplôme d'ingénieur
+          .info
+            .date 2011 - 2012
+            .place
+              %a{href: "http://www.ig2i.fr"} IG2I
+          .description 
+            Institut de Génie Informatique et Industriel. Ecole d'ingénieurs département de l'Ecole Centrale de Lille. Option Génie Informatique.
+            .also
+              .text Détails :
+              %a{href: "/ig2i"} IG2I
+        .entry
+          %h3 Baccalauréat Scientifique
+          .info
+            .date 2007
 
-    .experience.category
-      %h2 Experiences Professionnelles
-      .entry
-        %h3 Ingénieur de Développement
-        .info
-          .date Depuis Fév. 2013
-          .place
-            %a{href: "http://www.thredup.com"} thredUP, San Francisco (USA)
-        .description
-          Au sein d’une start-up dans le domaine de l’e-commerce, intégration d’une équipe d’ingénieurs en environnement Agile (Scrum) afin de participer à l’évolution continue du site web et des applications mobiles (Android & iOS)
-          %br
-          %p
-            .tech Env. Technique : 
-            Ruby on Rails, HAML, SASS, BackboneJS, JQuery, CoffeeScript, Android (Java SDK), iOS (Objective-C SDK)
-          .also
-            .text Détails :
-            %a{href: "/projects/thredup-website"} Projet Web
-            = " - "
-            %a{href: "/projects/thredup-android"} Projet Android
-            = " - "
-            %a{href: "/projects/thredup-ios"} Projet iOS
+      .experience.category
+        %h2 Experiences Professionnelles
+        .entry
+          %h3 Ingénieur de Développement
+          .info
+            .date Depuis Fév. 2013
+            .place
+              %a{href: "http://www.thredup.com"} thredUP, San Francisco (USA)
+          .description
+            Au sein d’une start-up dans le domaine de l’e-commerce, intégration d’une équipe d’ingénieurs en environnement Agile (Scrum) afin de participer à l’évolution continue du site web et des applications mobiles (Android & iOS)
+            %br
+            %p
+              .tech Env. Technique : 
+              Ruby on Rails, HAML, SASS, BackboneJS, JQuery, CoffeeScript, Android (Java SDK), iOS (Objective-C SDK)
+            .also
+              .text Détails :
+              %a{href: "/projects/thredup-website"} Projet Web
+              = " - "
+              %a{href: "/projects/thredup-android"} Projet Android
+              = " - "
+              %a{href: "/projects/thredup-ios"} Projet iOS
 
 
 
-      .entry
-        %h3 Apprenti Ingénieur d'Etude
-        .info
-          .date 2013
-          .place
-            %a{href: "http://www.adictiz.com"} Adictiz, Lille (59)
-        .description
-          Projet en 5e année de l'IG2I:
-          %br
-          Réalisation d’une étude complète (Etude de Marché, Benchmark, Dossiers de spécifications…) ayant pour objectif de cadrer le meilleur outil de développement de jeux vidéo pour l’entreprise, au sein d’une équipe projet de 7 personnes.
-          %br
-          %br
-          .also
-            .text Détails :
-            %a{href: "/projects/prp"} Projet Partenaire
-
-      .entry
-        %h3 Apprenti Ingénieur d'Etudes et de Développement
-        .info
-          .date 2011 - 2012
-          .place
-            %a{href: "http://www.alten.fr"} Alten Nord, Villeneuve d'Ascq (59)
-        .description
-          Stage d'apprenti-ingénieur d'une durée de 9 mois dont 7 en alternance, au sein de la DDPS (Direction des Projets Structurés):
-          %ul
-            %li 
-              Participation aux phases d'avant-vente des projets, par le biais de réponses à des appels d'offres :
-              Etudes fonctionnelles et techniques détaillées ; Etudes de faisabilité et prototypages ; Estimation de charges ; Veille technologique.
-            %li 
-              Intervention sur les phases de réalisation des projets (recueil des besoins, conception, développement, déploiement...). Utilisation de méthodologies de gestion de projet agiles.
-          %p
-            .tech Env. Technique : 
-            C# / ASP.net + études sur de nombreux langages, CMS etc…
-          .also
-            .text Détails :
-            %a{href: "/projects/alten-rao"} Réponses à Appels d'Offres
-            = " - "
-            %a{href: "/projects/alten-quizz"} Projet Quizz
-            = " - "
-            %a{href: "/projects/alten-atexis"} Projet Atexis
-      .entry
-        %h3 Responsable Technique
-        .info
-          .date 2011
-          .place
-            %a{href: "http://www.netdr.net"} The Net Doctor, Atlanta (USA)
-        .description
-          Mission ponctuelle d'une durée de 5 semaines durant les vacances d'été :
-          %br
-          Restructuration et optimisation d’un site web client basé sur un CMS privé.
-          Identification des besoins, documentation et formation des futurs utilisateurs.
-          %p
-            .tech Env. Technique : 
-            PHP
-          .also
-            .text Détails :
-            %a{href: "/projects/tnd-francoisandco"} Projet F&Co
-      .entry
-        %h3 Technicien Réseau / Développeur
-        .info
-          .date 2011
-          .place
-            %a{href: "http://www.netr.net"} The Net Doctor, Atlanta (USA)
-        .description
-          Stage internationnal d'une durée de 3 mois :
-          %br
-          Relation clients (analyse des besoins, suivi de projets, support technique), implémentation de systèmes informatiques (outils collaboratifs, systèmes VoIP), réalisation de sites web utilisant différents CMS, Search Engine Optimization.
-          %p
-            .tech Env. Technique : 
-            Très varié (Wordpress, Joomla, PHP…)
-          .also
-            .text Détails :
-            %a{href: "/projects/tnd-bpack"} Projet BPack
-            = " - "
-            %a{href: "/projects/tnd-wordpress"} Projets WP
-      .entry
-        %h3 Développeur web
-        .info
-          .date 2010
-          .place
-            %a{href: "http://www.actemium.com"} Actemium Arras, Tilloy-les-Mofflaines (62)
-        .description
-          Stage technicien d'une durée de 3 mois :
-          %br
-          Réalisation d’une Interface Homme-Machine de gestion d’alarmes automatisées sous forme d’un site web utilisé en Intranet.
-          %p
-            .tech Env. Technique :
-            PHP, JQuery, AJAX
-          .also
-            .text Détails :
-            %a{href: "/projects/actemium-dalkia"} Projet Dalkia
-      .entry
-        %h3 Développeur web
-        .info
-          .date 2010
-        .description
-          Projet Informatique (2e année IG2I):
-          Gestion de projet : Analyse, conception et développement du site web d’une association (utilisé à des fins de gestion des adhérents et des activités) au sein d’une équipe de 6 personnes.
-          %p
-            .tech Env. Technique : 
-            PHP
-          .also
-            .text Détails :
-            %a{href: "/projects/pinf"} Projet Info
-
-  #right_col.col-md-4
-    .category.center.pdf.visible-md.visible-lg
-      = render partial: "printcv"
-
-    .skills.category
-      %h2 Compétences
-      .entry
-        %h3 Informatique
-        .description
-          .skillset
-            %h4 Web
-            .skill-container
-              .skill{style: "width: 95%;"} HTML5
-            .skill-container
-              .skill{style: "width: 90%;"} CSS3
-            .skill-container
-              .skill{style: "width: 85%;"} JavaScript
-            .skill-container
-              .skill{style: "width: 85%;"} JQuery
-            .skill-container
-              .skill{style: "width: 85%;"} AJAX
+        .entry
+          %h3 Apprenti Ingénieur d'Etude
+          .info
+            .date 2013
+            .place
+              %a{href: "http://www.adictiz.com"} Adictiz, Lille (59)
+          .description
+            Projet en 5e année de l'IG2I:
+            %br
+            Réalisation d’une étude complète (Etude de Marché, Benchmark, Dossiers de spécifications…) ayant pour objectif de cadrer le meilleur outil de développement de jeux vidéo pour l’entreprise, au sein d’une équipe projet de 7 personnes.
             %br
             %br
-            .skill-container
-              .skill{style: "width: 80%;"} Ruby on Rails
-            .skill-container
-              .skill{style: "width: 50%;"} JEE
-            .skill-container
-              .skill{style: "width: 50%;"} ASP.net
-            .skill-container
-              .skill{style: "width: 40%;"} PHP
+            .also
+              .text Détails :
+              %a{href: "/projects/prp"} Projet Partenaire
 
-          .skillset
-            %h4 Langages
-            .skill-container
-              .skill{style: "width: 70%;"} Java
-            .skill-container
-              .skill{style: "width: 60%;"} C
-            .skill-container
-              .skill{style: "width: 40%;"} C++
-            .skill-container
-              .skill{style: "width: 50%;"} VB.NET
-            .skill-container
-              .skill{style: "width: 50%;"} C#.NET
+        .entry
+          %h3 Apprenti Ingénieur d'Etudes et de Développement
+          .info
+            .date 2011 - 2012
+            .place
+              %a{href: "http://www.alten.fr"} Alten Nord, Villeneuve d'Ascq (59)
+          .description
+            Stage d'apprenti-ingénieur d'une durée de 9 mois dont 7 en alternance, au sein de la DDPS (Direction des Projets Structurés):
+            %ul
+              %li 
+                Participation aux phases d'avant-vente des projets, par le biais de réponses à des appels d'offres :
+                Etudes fonctionnelles et techniques détaillées ; Etudes de faisabilité et prototypages ; Estimation de charges ; Veille technologique.
+              %li 
+                Intervention sur les phases de réalisation des projets (recueil des besoins, conception, développement, déploiement...). Utilisation de méthodologies de gestion de projet agiles.
+            %p
+              .tech Env. Technique : 
+              C# / ASP.net + études sur de nombreux langages, CMS etc…
+            .also
+              .text Détails :
+              %a{href: "/projects/alten-rao"} Réponses à Appels d'Offres
+              = " - "
+              %a{href: "/projects/alten-quizz"} Projet Quizz
+              = " - "
+              %a{href: "/projects/alten-atexis"} Projet Atexis
+        .entry
+          %h3 Responsable Technique
+          .info
+            .date 2011
+            .place
+              %a{href: "http://www.netdr.net"} The Net Doctor, Atlanta (USA)
+          .description
+            Mission ponctuelle d'une durée de 5 semaines durant les vacances d'été :
+            %br
+            Restructuration et optimisation d’un site web client basé sur un CMS privé.
+            Identification des besoins, documentation et formation des futurs utilisateurs.
+            %p
+              .tech Env. Technique : 
+              PHP
+            .also
+              .text Détails :
+              %a{href: "/projects/tnd-francoisandco"} Projet F&Co
+        .entry
+          %h3 Technicien Réseau / Développeur
+          .info
+            .date 2011
+            .place
+              %a{href: "http://www.netr.net"} The Net Doctor, Atlanta (USA)
+          .description
+            Stage internationnal d'une durée de 3 mois :
+            %br
+            Relation clients (analyse des besoins, suivi de projets, support technique), implémentation de systèmes informatiques (outils collaboratifs, systèmes VoIP), réalisation de sites web utilisant différents CMS, Search Engine Optimization.
+            %p
+              .tech Env. Technique : 
+              Très varié (Wordpress, Joomla, PHP…)
+            .also
+              .text Détails :
+              %a{href: "/projects/tnd-bpack"} Projet BPack
+              = " - "
+              %a{href: "/projects/tnd-wordpress"} Projets WP
+        .entry
+          %h3 Développeur web
+          .info
+            .date 2010
+            .place
+              %a{href: "http://www.actemium.com"} Actemium Arras, Tilloy-les-Mofflaines (62)
+          .description
+            Stage technicien d'une durée de 3 mois :
+            %br
+            Réalisation d’une Interface Homme-Machine de gestion d’alarmes automatisées sous forme d’un site web utilisé en Intranet.
+            %p
+              .tech Env. Technique :
+              PHP, JQuery, AJAX
+            .also
+              .text Détails :
+              %a{href: "/projects/actemium-dalkia"} Projet Dalkia
+        .entry
+          %h3 Développeur web
+          .info
+            .date 2010
+          .description
+            Projet Informatique (2e année IG2I):
+            Gestion de projet : Analyse, conception et développement du site web d’une association (utilisé à des fins de gestion des adhérents et des activités) au sein d’une équipe de 6 personnes.
+            %p
+              .tech Env. Technique : 
+              PHP
+            .also
+              .text Détails :
+              %a{href: "/projects/pinf"} Projet Info
 
-          .skillset
-            %h4 Mobile
-            .skill-container
-              .skill{style: "width: 60%;"} Android
-            .skill-container
-              .skill{style: "width: 40%;"} iOS
+    #right_col.col-md-4
+      .category.center.pdf.visible-md.visible-lg
+        = render partial: "printcv"
 
-          .skillset
-            %h4 CMS
-            .skill-container
-              .skill{style: "width: 80%;"} Wordpress
-            .skill-container
-              .skill{style: "width: 50%;"} Joomla
+      .skills.category
+        %h2 Compétences
+        .entry
+          %h3 Informatique
+          .description
+            .skillset
+              %h4 Web
+              .skill-container
+                .skill{style: "width: 95%;"} HTML5
+              .skill-container
+                .skill{style: "width: 90%;"} CSS3
+              .skill-container
+                .skill{style: "width: 85%;"} JavaScript
+              .skill-container
+                .skill{style: "width: 85%;"} JQuery
+              .skill-container
+                .skill{style: "width: 85%;"} AJAX
+              %br
+              %br
+              .skill-container
+                .skill{style: "width: 80%;"} Ruby on Rails
+              .skill-container
+                .skill{style: "width: 50%;"} JEE
+              .skill-container
+                .skill{style: "width: 50%;"} ASP.net
+              .skill-container
+                .skill{style: "width: 40%;"} PHP
 
-          .skillset
-            %h4 BDD
-            .skill-container
-              .skill{style: "width: 55%;"} MySQL
-            .skill-container
-              .skill{style: "width: 50%;"} SQL Server
-            .skill-container
-              .skill{style: "width: 30%;"} Access
+            .skillset
+              %h4 Langages
+              .skill-container
+                .skill{style: "width: 70%;"} Java
+              .skill-container
+                .skill{style: "width: 60%;"} C
+              .skill-container
+                .skill{style: "width: 40%;"} C++
+              .skill-container
+                .skill{style: "width: 50%;"} VB.NET
+              .skill-container
+                .skill{style: "width: 50%;"} C#.NET
 
-          .skillset
-            %h4 Méthodes
-            .skill-container
-              .skill{style: "width: 60%;"} Merise
-            .skill-container
-              .skill{style: "width: 60%;"} UML
-      
-      .entry
-        %h3 Gestion de Projet
-        .description
-          Cycle en V, méthodes agiles (Scrum, eXtreme Programming)
-          %br
-          Data-driven management, A/B Testing
+            .skillset
+              %h4 Mobile
+              .skill-container
+                .skill{style: "width: 60%;"} Android
+              .skill-container
+                .skill{style: "width: 40%;"} iOS
 
-      .entry
-        %h3 Langues
-        .description
-          %strong Anglais :
-          Courant (TOEIC: 975 / 990 en 2011) ;
-          %br
-          %strong Espagnol :
-          Notions (5 ans) ;
-      .entry
-        %h3 Communication
-        .description
-          Marketing et techniques de ventes, Psychologie, Management, Gestion de crise, Conduite du changement
-    .divers.category
-      %h2 Divers
-      .entry
-        %h3 Vie associative
-        .description
-          Fondateur et responsable de 2zik, pôle musical du Bureau des Arts (association artistique de l’IG2I), puis Président du Bureau des Arts (jusqu’en 2013).
-          .also
-            .text Détails :
-            %a{href: "/projects/bda-projets"} BDA
+            .skillset
+              %h4 CMS
+              .skill-container
+                .skill{style: "width: 80%;"} Wordpress
+              .skill-container
+                .skill{style: "width: 50%;"} Joomla
+
+            .skillset
+              %h4 BDD
+              .skill-container
+                .skill{style: "width: 55%;"} MySQL
+              .skill-container
+                .skill{style: "width: 50%;"} SQL Server
+              .skill-container
+                .skill{style: "width: 30%;"} Access
+
+            .skillset
+              %h4 Méthodes
+              .skill-container
+                .skill{style: "width: 60%;"} Merise
+              .skill-container
+                .skill{style: "width: 60%;"} UML
+        
+        .entry
+          %h3 Gestion de Projet
+          .description
+            Cycle en V, méthodes agiles (Scrum, eXtreme Programming)
+            %br
+            Data-driven management, A/B Testing
+
+        .entry
+          %h3 Langues
+          .description
+            %strong Anglais :
+            Courant (TOEIC: 975 / 990 en 2011) ;
+            %br
+            %strong Espagnol :
+            Notions (5 ans) ;
+        .entry
+          %h3 Communication
+          .description
+            Marketing et techniques de ventes, Psychologie, Management, Gestion de crise, Conduite du changement
+      .divers.category
+        %h2 Divers
+        .entry
+          %h3 Vie associative
+          .description
+            Fondateur et responsable de 2zik, pôle musical du Bureau des Arts (association artistique de l’IG2I), puis Président du Bureau des Arts (jusqu’en 2013).
+            .also
+              .text Détails :
+              %a{href: "/projects/bda-projets"} BDA
 
 
-      .entry
-        %h3 Loisirs
-        .description
-          Musique: Guitariste (8 ans) + pratique de divers instruments en amateur
-          %br
-          Sports   –   Cinéma   –   Informatique   –   Voyages
+        .entry
+          %h3 Loisirs
+          .description
+            Musique: Guitariste (8 ans) + pratique de divers instruments en amateur
+            %br
+            Sports   –   Cinéma   –   Informatique   –   Voyages
 
-    .references.category
-      %h2 References
-      .entry
-        Disponibles sur demande
+      .references.category
+        %h2 References
+        .entry
+          Disponibles sur demande

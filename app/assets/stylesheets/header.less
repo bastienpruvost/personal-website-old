@@ -2,120 +2,38 @@
 @import "colors";
 @import "custom_bootstrap/custom_bootstrap";
 
-@font-face {
-  font-family: 'FeliX';
-  src: url('/assets/FeliX.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+#menu {
+  float:right;
 }
 
-#logo {
-  font-family: "FeliX";
-  font-size: 42px;
-  padding-left: 10px;
-  .firstname {
-    display: inline;
-    color: @main;
-    padding: 0px;
-  }
-  .lastname {
-    display:inline;
-    color: @main2;
-    padding: 0px;
-  }
+#menu > ul > li > a {
+  height: 80px;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 0px 25px;
 }
 
-#top_row {
-  padding: 10px;
+.navbar-brand {
+  margin: 15px 0px;
+  font-size: 24px !important;
+  color: @beige !important;
 }
-
-#header {
-  margin-bottom: 40px;
-}
-
-.navbar-collapse{
-  .gradient(#fafafa, #fafafa, #ffffff);
+.navbar-toggle {
+  margin: 15px !important;
+  border: 1px solid @beige !important;
+  color: @beige !important;
 }
 
 .navbar {
-  background-color: white !important;
-  border: none;
+  background-color: @dark !important;
 }
 
-#nav-collap {
-  border: 1px solid @beige;
-}
-
-// Hardcoding a size for the menu when not on a phone
-// so that it can be "margin: auto"-ed
-@media (min-width: 767px) {
-  #menu ul.navbar-nav {
-    width: 340px;
-  }
-}
-
-#menu ul.navbar-nav { 
-  margin: auto;
-  float: none;
-  li > a { text-align: center; }
-  li.active > a {
-    background-color: @main;
-    color: white;
-  }
-}
-
-#menu ul li a {
-  color: @grey;
-}
-
-#social ul {
-  float: right;
-  padding: 9px;
-  list-style: none;
-  display: block;
-  height: 32px;
-  li {
-    height: 32px;
-    width: 32px;
-    float: left;
-    &:hover { background-position: 0% 100%; }
-    cursor: pointer;
-    a {
-      display: block;
-      height: 32px;
-      width: 32px;
-    }
-  }
-  .github {
-    background-image: url('/assets/social_icons/github.png');
-  }
-  .viadeo {
-    background-image: url('/assets/social_icons/viadeo.png');
-  }
-  .linkedin {
-    background-image: url('/assets/social_icons/linkedin.png');
-  }
-  .skype {
-    background-image: url('/assets/social_icons/skype.png');
-  }
-  .twitter {
-    background-image: url('/assets/social_icons/twitter.png');
-  }
-  .facebook {
-    background-image: url('/assets/social_icons/facebook.png');
-  }
-  .googleplus {
-    background-image: url('/assets/social_icons/googleplus.png');
-  }
-}
 
 @media (max-width: @screen-xs-max) {
   #header {
   position: fixed;
   width: 100%;
-  background-color: white;
   top: 0px;
-  height: 58px;
   z-index: 10;
   }
   body {

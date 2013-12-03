@@ -5,6 +5,22 @@
 body {
   padding-right: 0px;
   padding-left: 0px;
+  background-color: @extralight;
+}
+
+.container {
+  padding: 0px;
+}
+#img-home {
+  img {margin: auto;}
+  background-color: white;
+  margin:10px;
+}
+#container {
+  .drop-shadow(10px, 10px, 5px, 0.1);
+  background-color: white;
+  border: 1px solid @light;
+  padding: 30px;
 }
 
 #footer {
@@ -12,6 +28,8 @@ body {
   text-align: center;
   font-size: 0.85em;
   padding: 10px;
+  background-color: @dark;
+  color: @beige;
 }
 
 #intro {
@@ -46,10 +64,6 @@ body {
   }
 }
 
-#map {
-  margin: 40px 0px;
-}
-
 .form-group {
   padding: 10px 0px;
 }
@@ -74,4 +88,51 @@ body {
 .error {
   margin-bottom: 30px;
   border: 1px solid grey;
+}
+
+.clear {
+  clear: both;
+}
+
+//social
+#social ul {
+  float: right;
+  padding: 9px;
+  list-style: none;
+  display: block;
+  height: 32px;
+  li {
+    height: 32px;
+    width: 32px;
+    float: left;
+    &:hover { background-position: 0% 100%; }
+    cursor: pointer;
+    a {
+      display: block;
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+
+.github {
+  background-image: url('/assets/social_icons/github.png');
+}
+.viadeo {
+  background-image: url('/assets/social_icons/viadeo.png');
+}
+.linkedin {
+  background-image: url('/assets/social_icons/linkedin.png');
+}
+.skype {
+  background-image: url('/assets/social_icons/skype.png');
+}
+.twitter {
+  background-image: url('/assets/social_icons/twitter.png');
+}
+.facebook {
+  background-image: url('/assets/social_icons/facebook.png');
+}
+.googleplus {
+  background-image: url('/assets/social_icons/googleplus.png');
 }

@@ -1,41 +1,43 @@
 :javascript
   $("#menu li a[href='/contact']").parent().addClass("active")
 
-- flash.each do |name, msg|
-  .error.center
-    = msg
+#container.container
+  - flash.each do |name, msg|
+    .error.center
+      = msg
 
-.col-md-9.absolute_center
-  %h3 Me contacter
-  =form_for @message, :class => "form-horizontal", :url => contact_path do |form|
-    .form-group
-      .col-sm-2 Nom:
-      .col-sm-10
-        = form.text_field :name, :class => "form-control input-sm"
+  .row
+    .col-md-9.absolute_center
+      %h3 Me contacter
+      =form_for @message, :class => "form-horizontal", :url => contact_path do |form|
+        .form-group
+          .col-sm-2 Nom:
+          .col-sm-10
+            = form.text_field :name, :class => "form-control input-sm"
 
-    .form-group
-      .col-sm-2 Email:
-      .col-sm-10
-        = form.email_field :email, :class => "form-control input-sm"
+        .form-group
+          .col-sm-2 Email:
+          .col-sm-10
+            = form.email_field :email, :class => "form-control input-sm"
 
-    .form-group
-      .col-sm-2 Sujet:
-      .col-sm-10
-        = form.text_field :subject, :class => "form-control input-sm"
+        .form-group
+          .col-sm-2 Sujet:
+          .col-sm-10
+            = form.text_field :subject, :class => "form-control input-sm"
 
-    .form-group
-      .col-sm-2 Message:
-      .col-sm-10
-        = form.text_area :body, :class => "form-control", :rows => 6
+        .form-group
+          .col-sm-2 Message:
+          .col-sm-10
+            = form.text_area :body, :class => "form-control", :rows => 6
 
-    .form-group
-      = form.submit "Envoyer", :class => "btn btn-default"
+        .form-group
+          = form.submit "Envoyer", :class => "btn btn-default"
 
-.col-md-3.center
-  %h3 Informations
-  %br
-  251 rue Faidherbe,62400 Béthune 
-  %br
-  bastien.pruvost@gmail.com 
-  %br
-  +33 6 51 66 44 74 
+    .col-md-3.center
+      %h3 Informations
+      %br
+      251 rue Faidherbe,62400 Béthune 
+      %br
+      bastien.pruvost@gmail.com 
+      %br
+      +33 6 51 66 44 74 

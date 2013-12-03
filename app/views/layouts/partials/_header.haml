@@ -5,52 +5,25 @@
   %br
   bastien.pruvost@gmail.com - 06.51.66.44.74
 
-#header
-  .navbar.navbar-default{role: "navigation"}
-    #top_row.container
-      .row
-        .col-xs-10.col-sm-6
-          #logo
-            .firstname<> Bastien
-            .lastname<> Pruvost
-        .col-xs-2.navbar-header
-          %button.navbar-toggle{ type: "button", "data-toggle" => "collapse", "data-target" => "#nav-collap"}
-            %span.sr-only
-              Toggle navigation
-            %span
-              Menu
-        .clearfix.visible-xs
-        #social.col-xs-12.col-sm-6.hidden-xs
-          %ul
-            %li.github
-              %a{href:"https://github.com/bastienpruvost"}
-            %li.viadeo
-              %a{href:"http://fr.viadeo.com/fr/profile/bastien.pruvost"}
-            %li.linkedin
-              %a{href: "http://fr.linkedin.com/pub/bastien-pruvost/25/ba5/84a"}
-            %li.skype
-              %a{href:"skype:bastien.pruvost"}
-            %li.facebook
-              %a{href:"http://www.facebook.com/bpruvost"}
-            %li.googleplus
-              %a{href:"http://plus.google.com/114162255802000996547"}
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    .collapse.navbar-collapse#nav-collap
-      .container#menu
+#header
+  .container
+    .navbar.navbar-inverse
+      .navbar-header
+        %button.navbar-toggle{ type: "button", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
+          %span.sr-only Toggle navigation
+          %span Menu
+        %a.navbar-brand{href: "/"} Bastien PRUVOST
+
+      #menu.collapse.navbar-collapse
         %ul.nav.navbar-nav
           %li
-            %a{href: "/"}
-              Home
+            %a{href: "/"} Home
           %li
-            %a{href: "/cv"}
-              CV
+            %a{href: "/cv"} CV
           %li
-            %a{href: "/projects"}
-              Projets
+            %a{href: "/projects"} Projets
           %li
-            %a{href: "/blog"}
-              Blog
+            %a{href: "/blog"} Blog
           %li
-            %a{href: "/contact"}
-              Contact
+            %a{href: "/contact"} Contact
