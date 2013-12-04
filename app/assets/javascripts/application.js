@@ -16,3 +16,4 @@
 
 //= require twitter/bootstrap
 //= require jquery.isotope
+//= require jquery.flexslider

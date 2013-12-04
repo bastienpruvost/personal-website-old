@@ -1,0 +1,32 @@
+/ Place somewhere in the <body> of your page
+.flexslider{style: "width: 80%; margin: auto; margin-bottom: 40px;"}
+  %ul.slides
+    / %li{"data-thumb" => "/assets/slides/Bastien.png"}
+    /   %img{src: "/assets/slides/Bastien.png"}
+    / %li{"data-thumb" => "/assets/slides/collaboration.png"}
+    /   %img{src: "/assets/slides/colaboration.png"}
+    / %li{"data-thumb" => "/assets/slides/international.png"}
+    /   %img{src: "/assets/slides/international.png"}
+    / %li{"data-thumb" => "/assets/slides/rails.png"}
+    /   %img{src: "/assets/slides/rails.png"}
+    / %li{"data-thumb" => "/assets/slides/scrum.png"}
+    /   %img{src: "/assets/slides/scrum.png"}
+    %li
+      %img{src: "/assets/slides/Bastien.png"}
+    %li
+      %img{src: "/assets/slides/collaboration.png"}
+    %li
+      %img{src: "/assets/slides/international.png"}
+    %li
+      %img{src: "/assets/slides/rails.png"}
+    %li
+      %img{src: "/assets/slides/scrum.png"}
+
+
+
+:javascript
+  // Can also be used with $(document).ready()
+  $(window).load(function() {
+    $('.flexslider').flexslider({ animation: "fade", slideshowSpeed: 5500, animationSpeed: 1500, pauseOnHover: true});
+  });
+

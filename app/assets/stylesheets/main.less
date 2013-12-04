@@ -6,6 +6,8 @@ body {
   padding-right: 0px;
   padding-left: 0px;
   background-color: @extralight;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .container {
@@ -16,15 +18,27 @@ body {
   background-color: white;
   margin:10px;
 }
+#slider {
+  #container;
+  .carousel { 
+    max-width: 800px; 
+    margin: auto;
+  }
+  margin-bottom: 20px;
+}
 #container {
   .drop-shadow(10px, 10px, 5px, 0.1);
   background-color: white;
   border: 1px solid @light;
-  padding: 30px;
+  padding: 20px;
+}
+#last_projects{
+  #container;
+  margin-top: 20px;
 }
 
 #footer {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   font-size: 0.85em;
   padding: 10px;
@@ -47,6 +61,7 @@ body {
   margin: 5px;
   padding-bottom: 20px;
   .box-title {
+    position: relative;
     text-align: center;
     border: 1px solid @beige;
     background-color: @extralight;
@@ -59,8 +74,6 @@ body {
   .box {
     padding: 10px;
     color: @grey;
-    text-align: justify;
-    text-justify: inter-word;
   }
 }
 
@@ -78,11 +91,11 @@ body {
 }
 
 .warning{
-  height: 32px;
-  width: 32px;
+  height: 38px;
+  width: 38px;
   position: absolute;
-  top: -10px;
-  right: 9px;
+  left: -18px;
+  top: -18px;
 }
 
 .error {

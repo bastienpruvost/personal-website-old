@@ -1,6 +1,7 @@
 @import "colors";
 @import "mixins";
 
+
 .portfolioFilter {
     text-align: center;
     margin-bottom: 10px;
@@ -18,37 +19,38 @@
 
 .portfolioContainer {
   margin: auto;
-}
 
-.item {
-  height: 180px;
-  width: 180px;
-  margin: 15px;
-  border:1px solid @grey;
-  .hover_message {
-    display:none;
-    background-color: @darkgrey;
-    position: absolute;
-    text-align: center;
-    .link {text-decoration: underline;}
-    .title {
-      font-weight: bold;
-      padding-bottom: 5px;
+
+  .item {
+    height: 180px;
+    width: 180px;
+    margin: 15px;
+    border:1px solid @grey;
+    .hover_message {
+      display:none;
+      background-color: @darkgrey;
+      position: absolute;
+      text-align: center;
+      .link {text-decoration: underline;}
+      .title {
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+      width: 100%;
+      color: white;
+      bottom: 0px;
+      height:40%;
+      padding-top: 10px;
+      .opacity(0.9);
     }
-    width: 100%;
-    color: white;
-    bottom: 0px;
-    height:40%;
-    padding-top: 10px;
-    .opacity(0.9);
-  }
-  img {
-    margin:0px;
-    width: 100%;
-    height: auto;
-  }
-  img:hover {
-    cursor: pointer;
+    img {
+      margin:0px;
+      width: 100%;
+      height: auto;
+    }
+    img:hover {
+      cursor: pointer;
+    }
   }
 }
 

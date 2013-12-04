@@ -1,26 +1,16 @@
 :javascript
   $("#menu li a[href='/']").parent().addClass("active")
 
-#container.container
-  #img-home.center
-    %img.img-responsive{src: "/assets/home.png"}
+#slider.container
+  = render partial: "carousel"
       
 #container.container
   .row
-    #intro.col-md-12
-      .woaw
-        Bienvenue!
-      %br
-      Bonjour et bienvenue sur mon site personnel !
-      %br
-      Je m'appelle Bastien, j'ai 24 ans et je suis 
-      .important ingénieur 
-      et auto-entrepreneur spécialisé en
-      .important génie informatique.
-      %br
-      En espérant que vous trouverez sur ce site les informations que vous recherchez, je vous souhaite une bonne navigation !
 
     .col-md-4
+      %img{src: "http://placehold.it/350x150"}
+      %br
+      %br
       .place
         .box-title
           Qui Suis-Je ?
@@ -35,6 +25,9 @@
 
 
     .col-md-4
+      %img{src: "http://placehold.it/350x150"}
+      %br
+      %br
       .place
         .box-title
           Ce site
@@ -57,6 +50,9 @@
               , pour toute suggestion, renseignement...
 
     .col-md-4
+      %img{src: "http://placehold.it/350x150"}
+      %br
+      %br
       .place
         .box-title
           %img.warning{src: "/assets/warning.png"}
@@ -72,3 +68,6 @@
           Si mon profil vous intéresse, n'hésitez pas à 
           %a{href: "/contact"} me contacter 
           afin que nous puissions en discuter!
+
+#last_projects.container
+  Derniers projets
