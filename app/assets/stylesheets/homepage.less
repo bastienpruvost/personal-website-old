@@ -1,0 +1,53 @@
+@import "main";
+@import "colors";
+@import "mixins";
+@import "custom_bootstrap/custom_bootstrap";
+
+.homepage-sticker {
+  margin:auto;
+  max-height: 170px;
+}
+
+.lastprojects {
+  margin-top: 20px;
+}
+
+#homecontainer {
+  #container;
+  .place {
+    @media (max-width: @screen-sm-max) { 
+      max-width: 500px;
+      margin: auto;
+      padding-bottom: 100px;
+    }
+  }
+}
+#slider {
+  .slide-text {
+    position: absolute;
+    top: 50px;
+    background-color: black;
+    .opacity(0.75);
+    font-size: 1.2em;
+    color: white;
+    padding: 20px;
+  }
+  #container;
+  margin-bottom: 20px;
+  .flexslider {
+    max-width: 900px; 
+    margin: auto; 
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: @screen-sm-max) {
+    .flex-direction-nav {display: none;}
+  }
+}
+
+.warning{
+  height: 38px;
+  width: 38px;
+  position: absolute;
+  left: -18px;
+  top: -18px;
+}
