@@ -1,7 +1,7 @@
 :javascript
   $("#menu li a[href='/contact']").parent().addClass("active")
 
-#container.container
+#container.contact.container
   - flash.each do |name, msg|
     .error.center
       = msg
@@ -33,11 +33,16 @@
         .form-group
           = form.submit "Envoyer", :class => "btn btn-default"
 
-    .col-md-3.center
+    .col-md-3
       %h3 Informations
-      %br
-      251 rue Faidherbe,62400 Béthune 
-      %br
-      bastien.pruvost@gmail.com 
-      %br
-      +33 6 51 66 44 74 
+      .info
+        %br
+        251 rue Faidherbe,62400 Béthune 
+        %br
+        bastien.pruvost@gmail.com 
+        %br
+        +33 6 51 66 44 74 
+
+      .social
+        %h3 Social
+        = render partial: "social"

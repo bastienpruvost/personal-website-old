@@ -3,11 +3,19 @@
 @import "custom_bootstrap/custom_bootstrap";
 
 body {
-  padding-right: 0px;
-  padding-left: 0px;
+  padding: 20px 0px 20px 0px;
   background-color: @extralight;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.homepage-sticker {
+  margin:auto;
+  max-height: 170px;
+}
+
+.lastprojects {
+  margin-top: 20px;
 }
 
 .container {
@@ -18,13 +26,27 @@ body {
   background-color: white;
   margin:10px;
 }
+
+#homecontainer {
+  #container;
+  .place {
+    @media (max-width: @screen-sm-max) { 
+      max-width: 500px;
+      margin: auto;
+      padding-bottom: 100px;
+    }
+  }
+}
 #slider {
   #container;
-  .carousel { 
-    max-width: 800px; 
-    margin: auto;
+  .flexslider {
+    max-width: 900px; 
+    margin: auto; 
+    margin-bottom: 40px;
   }
-  margin-bottom: 20px;
+  @media screen and (max-width: @screen-sm-max) {
+    .flex-direction-nav {display: none;}
+  }
 }
 #container {
   .drop-shadow(10px, 10px, 5px, 0.1);
@@ -67,6 +89,7 @@ body {
     background-color: @extralight;
     color: @main;
     font-weight: bold;
+    font-size: 14px;
     padding: 5px;
     margin: 5px 0px;
     text-transform: uppercase;
@@ -82,6 +105,14 @@ body {
 }
 
 // contact
+
+.contact {
+  h3 {
+    .place > .box-title;
+  }
+}
+
+
 #rightcol {
   text-align: center;
 }
@@ -108,24 +139,37 @@ body {
 }
 
 //social
-#social ul {
-  float: right;
-  padding: 9px;
-  list-style: none;
-  display: block;
-  height: 32px;
-  li {
+#social {
+  padding-top: 20px;
+  width: 200px;
+  margin: auto;
+  ul {
+    list-style: none;
+    display: block;
     height: 32px;
-    width: 32px;
-    float: left;
-    &:hover { background-position: 0% 100%; }
-    cursor: pointer;
-    a {
-      display: block;
+    padding: 0px;
+    li {
       height: 32px;
       width: 32px;
+      float: left;
+      background-position: 0% 100%;
+      &:hover { background-position: 0% 0%; }
+      cursor: pointer;
+      a {
+        display: block;
+        height: 32px;
+        width: 32px;
+      }
     }
-  }
+  }}
+
+.social {
+  padding-top: 30px;
+}
+.info {
+  text-align: left; 
+  margin: auto; 
+  width: 220px;
 }
 
 .github {

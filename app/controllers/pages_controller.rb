@@ -1,18 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-  end
-
-  def cv
-  end
-
-  def projets
-  end
-
-  def blog
-  end
-
-  def contact
+    @projects = Project.where('id != 1').limit(4).order("RANDOM()")
   end
 
 end

@@ -20,12 +20,7 @@
 
   .portfolioContainer#portfolio
     - @projects.each do |p|
-      .item{class: p.skills.join(", ")}
-        .hover_message
-          .title= p.title
-          .link En savoir plus &raquo;
-        %a{href: "/projects/"+p.common_name}
-          %img.img_responsive{src: "/assets/projects/thumb/"+p.image_thumbnail[:src].to_s}
+      = render partial: "project", locals: {projet: p}
 
 
   :javascript

@@ -4,11 +4,11 @@
 #slider.container
   = render partial: "carousel"
       
-#container.container
+#homecontainer.container
   .row
 
-    .col-md-4
-      %img{src: "http://placehold.it/350x150"}
+    .col-sm-4
+      %img.homepage-sticker.img-responsive{src: "/assets/moi.png"}
       %br
       %br
       .place
@@ -24,8 +24,8 @@
           Passionné par mon métier, je me tiens naturellement au courant de ses évolutions, à la fois au niveau technique et des méthodes de travail ou de gestion de projets, convaincu que c'est dans cette adaptabilité que ce situe la force d'un ingénieur.
 
 
-    .col-md-4
-      %img{src: "http://placehold.it/350x150"}
+    .col-sm-4
+      %img.homepage-sticker.img-responsive{src: "/assets/http.png"}
       %br
       %br
       .place
@@ -49,8 +49,8 @@
               %a{href: "/contact"} contact
               , pour toute suggestion, renseignement...
 
-    .col-md-4
-      %img{src: "http://placehold.it/350x150"}
+    .col-sm-4
+      %img.homepage-sticker.img-responsive{src: "/assets/collaboration.png"}
       %br
       %br
       .place
@@ -69,5 +69,20 @@
           %a{href: "/contact"} me contacter 
           afin que nous puissions en discuter!
 
-#last_projects.container
-  Derniers projets
+#container.lastprojects.container
+  .place
+    .box
+      .box-title
+        Projets au hasard
+      .portfolioContainer#portfolio
+        - @projects.each do |p|
+          = render partial: "projects/project", locals: {projet: p}
+
+        .item{style: "background-color: #999"}
+          %a{href: "/projects/", style:"background-color: #f6f6f6; color: #1d70bc !important; font-family:'Tahoma'; color:white; font-size:1.4em; text-align:center; display: block; padding: 60px 30px;"}
+            Tous les projets
+
+:javascript
+  $(window).load(function(){
+    startPortfolio();
+  });

@@ -2,15 +2,12 @@
 @import "colors";
 @import "custom_bootstrap/custom_bootstrap";
 
-#menu {
-  float:right;
-}
+
 
 #menu > ul > li > a {
   height: 80px;
-  vertical-align: middle;
-  display: table-cell;
-  padding: 0px 25px;
+  text-align: center;
+  padding: 30px 25px;
 }
 
 .navbar-brand {
@@ -29,6 +26,11 @@
 }
 
 
+@media (min-width: @screen-sm-min) {
+  #menu {
+    float:right;
+  }
+}
 @media (max-width: @screen-xs-max) {
   #header {
   position: fixed;
@@ -37,6 +39,9 @@
   z-index: 10;
   }
   body {
-    padding-top: 120px;
+    padding-top: 120px !important;
+  }
+  #footer {
+    margin-top: 0px !important;
   }
 }
