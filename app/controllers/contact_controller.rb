@@ -2,6 +2,7 @@ class ContactController < ApplicationController
  
   def new
     @message = Message.new
+    @meta = { title: "Bastien Pruvost | Contact" }
   end
  
   def create

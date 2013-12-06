@@ -3,9 +3,12 @@
   %head
     %meta{name: "viewport", content: "width=device-width"}
     %meta{name: "google-site-verification", content: "THpP0FuV-EH5T7B30-mKRD1jmQszMqsj8DcYgLdthBs"}
+    %meta{"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8"}
+    %meta{:name => "keywords", :content => "#{t 'meta.keywords'}"}
 
-    %title
-      Bastien Pruvost
+    %meta{:name => "description", :content => "#{@meta.try(:description) || t('meta.description')}"}
+    %title= @meta.try(:title) || "Bastien Pruvost"
+
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags

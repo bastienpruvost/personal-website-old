@@ -1,4 +1,11 @@
 en:
+  meta:
+    cv: "Detailed CV"
+    projet: "Presentation of project"
+
+    keywords: "Bastien Pruvost, Engineer, Computer Science, CV, Portfolio, Project Management, Web developer, Ruby on Rails, Scrum, Agile, SEO, Innovation, Team Culture, Mobile apps"
+    description: "Bastien Pruvost's personal website. Engineer specialized in Computer Science. CV, Portfolio, Contact..."
+
   general:
     ingenieur: "IT Engineer"
     projet: "Projects"

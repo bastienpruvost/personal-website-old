@@ -1,4 +1,11 @@
 fr:
+  meta:
+    cv: "CV détaillé"
+    projet: "Présentation du projet"
+
+    keywords: "Bastien Pruvost, Ingénieur, Informatique, CV, Portfolio, IG2I, Gestion de Projet, Développeur web, Ruby on Rails, Scrum, Agile, SEO, Innovation, Equipe, Applications mobiles"
+    description: "Site personnel de Bastien Pruvost, Ingénieur en informatique. CV, Portfolio, Contact..."
+
   general:
     ingenieur: "Ingénieur en Génie Informatique"
     projet: "Projets"

@@ -2,6 +2,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.order("position DESC")
+    @meta = { title: "Bastien Pruvost | Portfolio" }
   end
 
   def show
@@ -11,6 +12,8 @@ class ProjectsController < ApplicationController
     end
     @project = Project.where(common_name: params[:name]).first
     @img_col_width = @project.image_column_width
+
+    @meta = { title: "Bastien Pruvost | #{t "meta.projet"} #{@project.title}" }
   end
 
 end
