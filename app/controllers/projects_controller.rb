@@ -5,8 +5,8 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    unless Project.where(common_name: params[:name]) != 1
-      flash[:error] = "Une erreur est survenue. Si ce probleme persiste, merci de me contacter."
+    if Project.where(common_name: params[:name]).count != 1
+      flash[:error] = t "message.erreur"
       redirect_to action: 'index' and return
     end
     @project = Project.where(common_name: params[:name]).first

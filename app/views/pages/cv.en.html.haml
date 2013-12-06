@@ -1,0 +1,290 @@
+:javascript
+  $("#menu li a[href='/cv']").parent().addClass("active");
+  $(function() {startCV();} );
+
+#container.container
+  .row.resume
+    #left_col.col-md-8
+      .category.center.pdf.visible-xs.visible-sm
+        = render partial: "printcv"
+
+      .education.category
+        %h2 Education
+        .entry
+          %h3 Engineering degree
+          .info
+            .date 2011 - 2012
+            .place
+              %a{href: "http://www.ig2i.fr"} IG2I
+          .description 
+            Institut de Génie Informatique et Industriel. Engineering school, department of French "Ecole Centrale de Lille". Specialization in Computer Science.
+            .also
+              .text Details :
+              %a{href: "/ig2i"} IG2I
+        .entry
+          %h3 Scientific Baccalaureat (i.e. French national examination for access to higher education studies) 
+          .info
+            .date 2007
+
+      .experience.category
+        %h2 Professional experience
+        .entry
+          %h3 Development Engineer
+          .info
+            .date Since Feb. 2013
+            .place
+              %a{href: "http://www.thredup.com"} thredUP, San Francisco (CA, USA)
+          .description
+            6-month graduating internship, then remote contractor
+            %br
+            I participated in the continuing evolution of the website and mobile applications of the company, 
+            within an engineering team evolving in an Agile (Scrum) environment 
+
+            %br
+            %p
+              .tech Technical env.:
+              Ruby on Rails, HAML, SASS, BackboneJS, JQuery, CoffeeScript, Android (Java SDK), iOS (Objective-C SDK)
+            .also
+              .text Details :
+              %a{href: "/projects/thredup-website"} Web project
+              = " - "
+              %a{href: "/projects/thredup-android"} Android project
+              = " - "
+              %a{href: "/projects/thredup-ios"} iOS project
+
+
+
+        .entry
+          %h3 Apprentice Engineer for Studies 
+          .info
+            .date 2013
+            .place
+              %a{href: "http://www.adictiz.com"} Adictiz, Lille (France)
+          .description
+            Partner project in the 5th year of IG2I:
+            %br
+            I participated in a complete study (Market study, benchmark, specifications…) which goal was to 
+            identify the best video game engine for the company, within a 7-person team. 
+            %br
+            %br
+            .also
+              .text Details :
+              %a{href: "/projects/prp"} Partner Projet
+
+        .entry
+          %h3 Apprentice Engineer for Studies and Applications
+          .info
+            .date 2011 - 2012
+            .place
+              %a{href: "http://www.alten.fr"} Alten Nord, Villeneuve d'Ascq (France)
+          .description
+            9-month apprentice engineer internship (7 as a sandwich course), within the Project Direction Department
+            %ul
+              %li 
+                I participated in the front-sale phases of the projects (replies to calls for tender)
+                I achieved detailed functional and technical studies, feasibility studies and prototyping, estimation of loads, technological watch. 
+              %li
+                I also participated in all the realization phases of the project (collection of needs, design, development, deployment).
+            %p
+              .tech Technical env.:
+              C# / ASP.net + studies on lots of different languages, CMS etc…
+            .also
+              .text Details :
+              %a{href: "/projects/alten-rao"} Replies to call for tenders
+              = " - "
+              %a{href: "/projects/alten-quizz"} Quizz Project
+              = " - "
+              %a{href: "/projects/alten-atexis"} Atexis Project
+        .entry
+          %h3 Project Manager
+          .info
+            .date 2011
+            .place
+              %a{href: "http://www.netdr.net"} The Net Doctor, Atlanta (USA)
+          .description
+            5-week specific assigment during summer holidays:
+            %br
+              I was in charge of restructuring and optimizing a customer's website based on a homemade CMS. 
+              I completed identification of needs, realization, documentation and training of future users. 
+            %p
+              .tech Technical env.:
+              PHP
+            .also
+              .text Details :
+              %a{href: "/projects/tnd-francoisandco"} Projet F&Co
+        .entry
+          %h3 Network technician / Developer
+          .info
+            .date 2011
+            .place
+              %a{href: "http://www.netr.net"} The Net Doctor, Atlanta (GA, USA)
+          .description
+            3-month international internship
+            %br
+            I was involved in a lot of different projects, which would change on a regular basis: 
+            Covered client relations (analysis of needs, project monitoring, software and hardware 
+            troubleshooting), installation and configuration of servers, workstations and VoIP phone systems, 
+            design of websites using different CMS, Search Engine Optimization 
+            %p
+              .tech Technical env.:
+              Very variable (Wordpress, Joomla, PHP…)
+            .also
+              .text Details :
+              %a{href: "/projects/tnd-bpack"} BPack Project
+              = " - "
+              %a{href: "/projects/tnd-wordpress"} WP Projects
+        .entry
+          %h3 Web developer
+          .info
+            .date 2010
+            .place
+              %a{href: "http://www.actemium.com"} Actemium Arras, Tilloy-les-Mofflaines (France)
+          .description
+            3-month technical internship
+            %br
+            I participated in a 3-person team project aiming at managing automatic alarms (in the form of a 
+            website used on the company’s intranet) 
+            %p
+              .tech Env. Technique :
+              PHP, JQuery, AJAX
+            .also
+              .text Details :
+              %a{href: "/projects/actemium-dalkia"} Dalkia Project
+        .entry
+          %h3 Web developer
+          .info
+            .date 2010
+          .description
+            Computer Project in the 2nd year of IG2I
+            Project management: Analyzed, designed and developed an association’s website (used for 
+            managing its members and activities). Member of a team of 6.
+            %p
+              .tech Technical env.:
+              PHP
+            .also
+              .text Details :
+              %a{href: "/projects/pinf"} Computing Project
+
+    #right_col.col-md-4
+      .category.center.pdf.visible-md.visible-lg
+        = render partial: "printcv"
+
+      .skills.category
+        %h2 Skills
+        .entry
+          %h3 Informatics
+          .description
+            .skillset
+              %h4 Web
+              .skill-container
+                .skill{style: "width: 95%;"} HTML5
+              .skill-container
+                .skill{style: "width: 90%;"} CSS3
+              .skill-container
+                .skill{style: "width: 85%;"} JavaScript
+              %br
+              .skill-container
+                .skill{style: "width: 85%;"} JQuery
+              .skill-container
+                .skill{style: "width: 85%;"} AJAX
+              %br
+              %br
+              .skill-container
+                .skill{style: "width: 80%;"} Ruby on Rails
+              .skill-container
+                .skill{style: "width: 50%;"} JEE
+              .skill-container
+                .skill{style: "width: 50%;"} ASP.net
+              %br
+              .skill-container
+                .skill{style: "width: 40%;"} PHP
+
+            .skillset
+              %h4 Langages
+              .skill-container
+                .skill{style: "width: 70%;"} Java
+              .skill-container
+                .skill{style: "width: 60%;"} C
+              .skill-container
+                .skill{style: "width: 40%;"} C++
+              %br
+              .skill-container
+                .skill{style: "width: 50%;"} VB.NET
+              .skill-container
+                .skill{style: "width: 50%;"} C#.NET
+
+            .skillset
+              %h4 Mobile
+              .skill-container
+                .skill{style: "width: 60%;"} Android
+              .skill-container
+                .skill{style: "width: 40%;"} iOS
+
+            .skillset
+              %h4 CMS
+              .skill-container
+                .skill{style: "width: 80%;"} Wordpress
+              .skill-container
+                .skill{style: "width: 50%;"} Joomla
+
+            .skillset
+              %h4 DB
+              .skill-container
+                .skill{style: "width: 55%;"} MySQL
+              .skill-container
+                .skill{style: "width: 50%;"} SQL Server
+              .skill-container
+                .skill{style: "width: 30%;"} Access
+
+            .skillset
+              %h4 Methods
+              .skill-container
+                .skill{style: "width: 60%;"} Case
+              .skill-container
+                .skill{style: "width: 60%;"} UML
+        
+        .entry
+          %h3 Project Management
+          .description
+            V-Model, Agile methods (Scrum, eXtreme Programming)
+            %br
+            Data-driven management, A/B Testing
+
+        .entry
+          %h3 Languages
+          .description
+            %strong French:
+            Mother Tongue ;
+            %br
+            %strong English:
+            Fluent (TOEIC: 975 / 990 in 2011) ;
+            %br
+            %strong Spanish:
+            Notions (5 years) ;
+        .entry
+          %h3 Communication
+          .description
+            Marketing and sales methods, Psychology, Management, Crisis Management, Implementation of change 
+
+      .divers.category
+        %h2 Personal
+        .entry
+          %h3 Community Life
+          .description
+            Founder and in charge of 2zik, musical department of Bureau des Arts (artistic association of Life: IG2I), then President of Bureau des Arts (until graduation in 2013). 
+            .also
+              .text Details :
+              %a{href: "/projects/bda-projets"} BDA
+
+
+        .entry
+          %h3 Hobbies
+          .description
+            Music: Guitar player (8 ans) + several instruments as amateur
+            %br
+            Sports   –   Cinéma   –   Computing   –   Traveling
+
+      .references.category
+        %h2 References
+        .entry
+          Available upon request

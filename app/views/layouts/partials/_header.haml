@@ -1,9 +1,9 @@
 #print.center.well.visible-print
   %b Bastien Pruvost
   %br
-  Ingénieur en Génie Informatique
+  = t "general.ingenieur"
   %br
-  bastien.pruvost@gmail.com - 06.51.66.44.74
+  bastien.pruvost@gmail.com - +33 6 51 66 44 74
 
 
 #header
@@ -21,8 +21,11 @@
           %li
             %a{href: "/cv"} CV
           %li
-            %a{href: "/projects"} Projets
+            %a{href: "/projects"}= t "general.projet"
           %li
             %a{href: "/blog"} Blog
           %li
             %a{href: "/contact"} Contact
+          %li
+            %a.flag{href:"?l=#{@flag}"}
+              %img{src: "/assets/flag_#{@flag}.png"}

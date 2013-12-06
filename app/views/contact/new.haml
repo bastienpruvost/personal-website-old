@@ -8,33 +8,33 @@
 
   .row
     .col-md-9.absolute_center
-      %h3 Me contacter
+      %h3= t ".contact"
       =form_for @message, :class => "form-horizontal", :url => contact_path do |form|
         .form-group
-          .col-sm-2 Nom:
+          .col-sm-2= t ".nom"
           .col-sm-10
             = form.text_field :name, :class => "form-control input-sm"
 
         .form-group
-          .col-sm-2 Email:
+          .col-sm-2= t ".email"
           .col-sm-10
             = form.email_field :email, :class => "form-control input-sm"
 
         .form-group
-          .col-sm-2 Sujet:
+          .col-sm-2= t ".sujet"
           .col-sm-10
             = form.text_field :subject, :class => "form-control input-sm"
 
         .form-group
-          .col-sm-2 Message:
+          .col-sm-2= t ".message"
           .col-sm-10
             = form.text_area :body, :class => "form-control", :rows => 6
 
         .form-group
-          = form.submit "Envoyer", :class => "btn btn-default"
+          = form.submit t(".envoyer"), :class => "btn btn-default"
 
     .col-md-3
-      %h3 Informations
+      %h3= t ".info"
       .informations
         %br
         251 rue Faidherbe,62400 Béthune 

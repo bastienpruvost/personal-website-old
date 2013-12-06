@@ -1,0 +1,55 @@
+fr:
+  general:
+    ingenieur: "Ingénieur en Génie Informatique"
+    projet: "Projets"
+    maj: "Dernière mise à jour : "
+    optimise: "Optimisé pour une navigation sur PC, ainsi que sur tablette ou smartphone."
+    reserve: "Tous droits réservés"
+    imprime: "Imprimé sur www.bastienpruvost.com"
+
+    savoir_plus: "En savoir plus >>"
+    change_l: "Changer de langue"
+
+  message:
+    erreur: "Une erreur est survenue. Si ce problème persiste, merci de me contacter."
+    msg_envoye: "Message envoyé. Je reviendrai vers vous dès que possible."
+    msg_erreur: "Erreur. Merci de vérifier que tous les champs sont remplis correctement."
+
+  slider:
+    s1_1: "Bienvenue sur mon site personnel ! "
+    s1_2: "Je m'appelle Bastien..."
+    s2: "...et suis ingénieur spécialisé en informatique."
+    s3: "Je porte un intérêt particulier aux nouvelles technologies du web..."
+    s4: "... aux  méthodes de gestion de projets et de management..."
+    s5: "... et aux projets innovants ou d'envergure internationale."
+    s6_1: "Je suis en ce moment à l'écoute d'opportunités."
+    s6_2: "N'hésitez pas à me contacter !"
+
+  contact:
+    new:
+      nom: "Nom :"
+      email: "Email :"
+      sujet: "Sujet :"
+      message: "Message :"
+      envoyer: "Envoyer"
+      info: "Informations"
+      contact: "Me contacter"
+
+  pages:
+    printcv:
+      astuce: "Astuce: Affichez / masquer les parties qui vous intérèssent, puis "
+      imprimez: "Imprimez !"
+      ou: "ou"
+      telecharger: "Télécharger la version PDF"
+
+    blog:
+      bientot: "Bientôt..."
+
+    index:
+      exemples: "Exemples de projets (aléatoire)"
+      tous_projets: "Tous mes projets"
+
+  projects:
+    index:
+      toutes: "Tous les projets"
+      gp: "Gestion de Projet / Etudes"

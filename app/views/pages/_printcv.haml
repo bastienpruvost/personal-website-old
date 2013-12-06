@@ -1,8 +1,8 @@
 .hidden-print
-  Astuce: Affichez / masquer les parties qui vous intérèssent, puis 
-  %a{href: "javascript:if(window.print)window.print()"} Imprimez!
+  = t ".astuce"
+  %a{href: "javascript:if(window.print)window.print()"}= t ".imprimez"
   %br
-  ou
+  = t ".ou"
   %br
-  %a.btn.btn-bast{href: "/CV/CV_bastien_pruvost_fr.pdf"}
-    Télécharger la version PDF
+  %a.btn.btn-bast{href: "/CV/CV_bastien_pruvost_#{I18n.locale}.pdf"}
+    = t ".telecharger"

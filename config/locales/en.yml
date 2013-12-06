@@ -1,23 +1,55 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  general:
+    ingenieur: "IT Engineer"
+    projet: "Projects"
+    maj: "Last update: "
+    optimise: "Optimized for browsing on PC, as well as tablet or smartphone."
+    reserve: "All rights reserved"
+    imprime: "Printed on www.bastienpruvost.com"
+
+    savoir_plus: "Know more >>"
+    change_l: "Change language"
+
+  message:
+    erreur: "There was an error. If this keeps happening, please contact me"
+    msg_envoye: "Message sent. I'll get back to you ASAP."
+    msg_erreur: "Error. Please check that all the fields are filled correctly."
+
+  slider:
+    s1_1: "Welcome on my personal website! "
+    s1_2: "I'm Bastien..."
+    s2: "...and I'm an engineer specialized in Computer Science."
+    s3: "I am particularly interested in web technologies..."
+    s4: "... in project and team management..."
+    s5: "... and in innovative projects or international ones"
+    s6_1: "I am currently looking for a new professional opportunity."
+    s6_2: "Feel free to contact me!"
+
+  contact:
+    new:
+      nom: "Name:"
+      email: "Email:"
+      sujet: "Subject:"
+      message: "Message:"
+      envoyer: "Send"
+      info: "Information"
+      contact: "Contact me"
+
+  pages:
+    printcv:
+      astuce: "Hint: Show / hide the parts that interest you, and then "
+      imprimez: "Print!"
+      ou: "or"
+      telecharger: "Download the PDF version"
+
+    blog:
+      bientot: "Soon..."
+
+    index:
+      exemples: "Project examples (random)"
+      tous_projets: "All my projects"
+
+  projects:
+    index:
+      toutes: "All projects"
+      gp: "Project Management / Studies"

@@ -8,7 +8,7 @@
 
   .portfolioFilter
     %a.current{href: "#", "data-filter" => "*"}
-      Toutes Categories
+      = t ".toutes"
     %a{href: "#", "data-filter" => ".web"}
       Web
     %a{href: "#", "data-filter" => ".mobile"}
@@ -16,7 +16,8 @@
     %a{href: "#", "data-filter" => ".desktop"}
       Desktop
     %a{href: "#", "data-filter" => ".gp"}
-      Gestion de Projet / Etudes
+      = t ".gp"
+      
 
   .portfolioContainer#portfolio
     - @projects.each do |p|

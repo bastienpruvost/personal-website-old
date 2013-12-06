@@ -7,7 +7,10 @@
 #menu > ul > li > a {
   height: 80px;
   text-align: center;
-  padding: 30px 25px;
+  padding: 30px 20px;
+  &.flag {
+    padding: 25px 20px;
+  }
 }
 
 .navbar-brand {
@@ -33,10 +36,17 @@
 }
 @media (max-width: @screen-xs-max) {
   #header {
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  z-index: 10;
+    #menu > ul > li > a {
+      height: 45px;
+      padding: 15px 20px;
+    }
+    .navbar-collapse.in{
+      height: 100px;
+    }
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
   }
   body {
     padding-top: 120px !important;

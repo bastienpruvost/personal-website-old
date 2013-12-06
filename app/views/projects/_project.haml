@@ -2,5 +2,5 @@
   %a{href: "/projects/"+projet.common_name}
     .hover_message
       .title= projet.title
-      .link En savoir plus &raquo;
+      .link= t "general.savoir_plus"
     %img.img_responsive{src: "/assets/projects/thumb/"+projet.image_thumbnail[:src].to_s}

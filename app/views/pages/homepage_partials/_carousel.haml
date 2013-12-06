@@ -1,39 +1,37 @@
-/ Place somewhere in the <body> of your page
 .flexslider
   %ul.slides
     %li
       %img{src: "/assets/slides/Bastien.png"}
       %p.slide-text.flex-caption
-        = "Bienvenue sur mon site personnel ! "
+        = t "slider.s1_1"
         %br
-        = "Je m'appelle Bastien..."
+        = t "slider.s1_2"
     %li
-      %img{src: "/assets/slides/Bastien.png"}
+      %img{src: "/assets/slides/ig2i.png"}
       %p.slide-text.flex-caption
-        = "...et suis ingénieur spécialisé en informatique."
+        = t "slider.s2"
     %li
       %img{src: "/assets/slides/rails.png"}
       %p.slide-text.flex-caption
-        = "Je porte un intérêt particulier aux nouvelles technologies du web..."
+        = t "slider.s3"
     %li
       %img{src: "/assets/slides/scrum.png"}
       %p.slide-text.flex-caption
-        = "... aux  méthodes de gestion de projets et de management..."
+        = t "slider.s4"
     %li
       %img{src: "/assets/slides/international.png"}
       %p.slide-text.flex-caption
-        = "... et aux projets innovants ou d'envergure internationale."
+        = t "slider.s5"
     %li
       %img{src: "/assets/slides/collaboration.png"}
       %p.slide-text.flex-caption
-        = "Je suis en ce moment à l'écoute d'opportunités."
+        = t "slider.s6_1"
         %br
-        = "N'hésitez pas à me contacter !"
+        = t "slider.s6_2"
 
 
 
 :javascript
-  // Can also be used with $(document).ready()
   $(window).load(function() {
     $('.flexslider').flexslider({ animation: "fade", slideshowSpeed: 5500, animationSpeed: 1500, pauseOnHover: true});
   });

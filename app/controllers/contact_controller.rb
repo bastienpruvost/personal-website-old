@@ -9,10 +9,10 @@ class ContactController < ApplicationController
     
     if @message.valid?
       ContactMailer.new_message(@message).deliver
-      flash.now[:alert] = "Message envoye. Je reviendrai vers vous des que possible."
+      flash.now[:alert] = t "message.msg_envoye"
       render :new
     else
-      flash.now[:alert] = "Erreur. Merci de verifier que tous les champs sont remplis correctement."
+      flash.now[:alert] = t "message.msg_erreur"
       render :new
     end
   end

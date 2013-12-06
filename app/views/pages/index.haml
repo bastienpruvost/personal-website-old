@@ -2,78 +2,27 @@
   $("#menu li a[href='/']").parent().addClass("active")
 
 #slider.container
-  = render partial: "carousel"
+  = render partial: "pages/homepage_partials/carousel"
       
 #homecontainer.container
   .row
-
     .col-sm-4
-      %img.homepage-sticker.img-responsive{src: "/assets/moi.png"}
-      %br
-      %br
-      .place
-        .box-title
-          Qui Suis-Je ?
-        .box
-          Ingénieur récemment diplômé de l'
-          .important IG2I
-          (département de l'Ecole Centrale de Lille), j'ai rapidement décidé d'orienter ma carrière professionnelle autour des nouvelles technologies du 
-          .important web. 
-          %br
-          %br
-          Passionné par mon métier, je me tiens naturellement au courant de ses évolutions, à la fois au niveau technique et des méthodes de travail ou de gestion de projets, convaincu que c'est dans cette adaptabilité que ce situe la force d'un ingénieur.
-
+      %img#fret.homepage-sticker.img-responsive{src: "/assets/moi.png"}
+      = render partial: "pages/homepage_partials/presentation"
 
     .col-sm-4
       %img.homepage-sticker.img-responsive{src: "/assets/http.png"}
-      %br
-      %br
-      .place
-        .box-title
-          Ce site
-        .box
-          Ici, vous trouverez:
-          %ul
-            %li 
-              mon 
-              %a{href: "/cv"} Curriculum Vitae
-            %li 
-              des exemples de 
-              %a{href: "/projects"} projets 
-              sur lesquels j'ai pu travailler
-            %li 
-              (bientôt) un 
-              %a{href: "/blog"} blog
-            %li 
-              un formulaire de 
-              %a{href: "/contact"} contact
-              , pour toute suggestion, renseignement...
+      = render partial: "pages/homepage_partials/presentation"
 
     .col-sm-4
       %img.homepage-sticker.img-responsive{src: "/assets/collaboration.png"}
-      %br
-      %br
-      .place
-        .box-title
-          %img.warning{src: "/assets/warning.png"}
-          Collaborons !
-        .box
-          Je suis actuellement en 
-          .important recherche d'un poste 
-          dans la région Rhône-Alpes (idéalement autour de technologies Ruby on Rails, mais je reste à l'écoute de toute opportunité).
-          %br
-          Je porte notamment un intérêt particulier aux projets innovants, aux méthodologies de gestion de projet Agiles, ainsi qu'à l'optimisation du travail en équipe.
-          %br
-          %br
-          Si mon profil vous intéresse, n'hésitez pas à 
-          %a{href: "/contact"} me contacter 
-          afin que nous puissions en discuter!
+      = render partial: "pages/homepage_partials/presentation"
 
 #container.lastprojects.container
   .place
     .box
       .box-title
-        Exemples de projets (aléatoire)
+        = t ".exemples"
       .portfolioContainer#portfolio
         - @projects.each do |p|
           = render partial: "projects/project", locals: {projet: p}
@@ -81,8 +30,8 @@
         .item
           %a{href: "/projects/"}
             .hover_message
-              .title Tous mes projets
-              .link En savoir plus &raquo;
+              .title= t ".tous_projets"
+              .link= t "general.savoir_plus"
             %img.img_responsive{src: "/assets/projects.png"}
 
 :javascript
