@@ -6,8 +6,8 @@
     %meta{"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8"}
     %meta{:name => "keywords", :content => "#{t 'meta.keywords'}"}
 
-    %meta{:name => "description", :content => "#{@meta.try(:description) || t('meta.description')}"}
-    %title= @meta.try(:title) || "Bastien Pruvost"
+    %meta{:name => "description", :content => "#{@meta.try(:[], :description) || t('meta.description')}"}
+    %title= @meta.try(:[], :title) || "Bastien Pruvost"
 
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
