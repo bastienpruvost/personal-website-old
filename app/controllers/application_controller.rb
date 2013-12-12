@@ -3,24 +3,20 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_action :set_locale
+  before_action :set_locale, :set_variables
 
   def set_locale
-    I18n.locale = locale_from_url || locale_from_session || I18n.default_locale
+    I18n.locale = params[:locale]
+    redirect_to "/fr" unless params[:locale].in? ["en", "fr"]
+  end
+
+  def default_url_options(options={})
+    { locale: I18n.locale }
+  end
+
+  def set_variables
     @flag = (I18n.locale == :en) ? "fr" : "en"
+    @url_translated = request.fullpath.gsub(/^\/#{I18n.locale}/, "/"+@flag)
   end
 
-  protected
-
-  # When changing locale
-  def locale_from_url
-    if (params[:l].to_s.in?(["en", "fr"]))
-      session[:l] = params[:l]
-      return params[:l]
-    end
-  end
-
-  def locale_from_session
-    (session[:l].to_s.in?(["en", "fr"])) ? session[:l] : nil
-  end
 end

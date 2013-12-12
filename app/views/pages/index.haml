@@ -28,7 +28,7 @@
           = render partial: "projects/project", locals: {projet: p}
 
         .item
-          %a{href: "/projects/"}
+          %a{href: projects_path}
             .hover_message
               .link= t "general.savoir_plus"
             %img.img_responsive{src: "/assets/projects.png"}

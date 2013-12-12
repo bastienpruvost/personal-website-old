@@ -17,15 +17,15 @@
       #menu.collapse.navbar-collapse
         %ul.nav.navbar-nav
           %li
-            %a{href: "/"} Home
+            %a{href: root_path} Home
           %li
-            %a{href: "/cv"} CV
+            %a{href: cv_path} CV
           %li
-            %a{href: "/projects"}= t "general.projet"
+            %a{href: projects_path}= t "general.projet"
           %li
-            %a{href: "/blog"} Blog
+            %a{href: blog_path} Blog
           %li
-            %a{href: "/contact"} Contact
+            %a{href: contact_path} Contact
           %li
-            %a.flag{href:"?l=#{@flag}"}
+            %a.flag{href: @url_translated}
               %img{src: "/assets/flag_#{@flag}.png"}

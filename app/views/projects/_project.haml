@@ -1,5 +1,5 @@
 .item{class: projet.skills.join(", ")}
-  %a{href: "/projects/"+projet.common_name}
+  %a{href: "/#{I18n.locale}/projects/"+projet.common_name}
     .hover_message
       .link= t "general.savoir_plus"
     %img.img_responsive{src: "/assets/projects/thumb/"+projet.image_thumbnail[:src].to_s}
