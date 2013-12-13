@@ -32,6 +32,10 @@ en:
     s6_1: "I am currently looking for a new opportunity."
     s6_2: "Feel free to contact me!"
 
+    alt3: "Ruby on Rails development"
+    alt4: "Agile Scrum Project Management"
+    alt5: "Innovation, International Projects"
+
   contact:
     new:
       nom: "Name:"

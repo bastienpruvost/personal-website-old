@@ -14,15 +14,15 @@
 #homecontainer.container
   .row
     .col-sm-4
-      %img#fret.homepage-sticker.img-responsive{src: "/assets/moi.png"}
+      %img#fret.homepage-sticker.img-responsive{src: "/assets/moi.png", alt: "bastien pruvost"}
       = render partial: "pages/homepage_partials/presentation"
 
     .col-sm-4
-      %img.homepage-sticker.img-responsive{src: "/assets/http.png"}
+      %img.homepage-sticker.img-responsive{src: "/assets/http.png", alt: "web"}
       = render partial: "pages/homepage_partials/site"
 
     .col-sm-4
-      %img.homepage-sticker.img-responsive{src: "/assets/collaboration.png"}
+      %img.homepage-sticker.img-responsive{src: "/assets/collaboration.png", alt: "colloboration"}
       = render partial: "pages/homepage_partials/collaborons"
 
 #container.lastprojects.container
@@ -38,5 +38,5 @@
           %a{href: projects_path}
             .hover_message
               .link= t "general.savoir_plus"
-            %img.img_responsive{src: "/assets/projects.png"}
+            %img.img_responsive{src: "/assets/projects.png", alt: t(".tous_projets")}
             .title= t ".tous_projets"

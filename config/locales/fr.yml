@@ -32,6 +32,10 @@ fr:
     s6_1: "Je suis en ce moment à l'écoute d'opportunités."
     s6_2: "N'hésitez pas à me contacter !"
 
+    alt3: "Développement Ruby on Rails"
+    alt4: "Gestion de Projet Agile Scrum"
+    alt5: "Innovation, Projets Internationnaux"
+
   contact:
     new:
       nom: "Nom :"
