@@ -1,5 +1,6 @@
-:javascript
-  $("#menu li a[href='/projects']").parent().addClass("active")
+- content_for :head do
+  :javascript
+    $(function() { $("#menu li a[href='/#{I18n.locale}/projects']").parent().addClass("active"); });
 
 #container.container
   #left_col{class: "col-md-"+(12 - @img_col_width).to_s}

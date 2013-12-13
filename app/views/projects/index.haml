@@ -1,5 +1,9 @@
-:javascript
-  $("#menu li a[href='/projects']").parent().addClass("active")
+- content_for :head do
+  = javascript_include_tag 'portfolio'
+  :javascript
+    $(function() { $("#menu li a[href='/#{I18n.locale}/projects']").parent().addClass("active"); });
+
+  = stylesheet_link_tag 'portfolio'
 
 #container.container
   - flash.each do |name, msg|

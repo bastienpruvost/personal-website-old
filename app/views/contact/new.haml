@@ -1,5 +1,7 @@
-:javascript
-  $("#menu li a[href='/contact']").parent().addClass("active")
+- content_for :head do
+  :javascript
+    $(function() { $("#menu li a[href='/#{I18n.locale}/contact']").parent().addClass("active"); });
+  = stylesheet_link_tag 'contact'
 
 #container.contact.container
   - flash.each do |name, msg|

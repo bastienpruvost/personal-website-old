@@ -1,6 +1,9 @@
-:javascript
-  $("#menu li a[href='/cv']").parent().addClass("active");
-  $(function() {startCV();} );
+- content_for :head do
+  :javascript
+    $(function() { $("#menu li a[href='/#{I18n.locale}/cv']").parent().addClass("active"); });
+
+  = javascript_include_tag 'cv'
+  = stylesheet_link_tag 'cv'
 
 #container.container
   .row.resume

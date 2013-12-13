@@ -1,5 +1,5 @@
 :javascript
-  $("#menu li a[href='/blog']").parent().addClass("active")
+  $(function() { $("#menu li a[href='/#{I18n.locale}/blog']").parent().addClass("active"); });
 
 #container.container
   %p

@@ -1,5 +1,12 @@
-:javascript
-  $("#menu li a[href='/']").parent().addClass("active")
+- content_for :head do
+  = javascript_include_tag 'jquery.flexslider'
+  = javascript_include_tag 'portfolio'
+  :javascript
+    $(function() { $("#menu li a[href='/#{I18n.locale}']").parent().addClass("active"); });
+
+  = stylesheet_link_tag 'homepage'
+  = stylesheet_link_tag 'portfolio'
+  = stylesheet_link_tag 'flexslider'
 
 #slider.container
   = render partial: "pages/homepage_partials/carousel"
@@ -33,8 +40,3 @@
               .link= t "general.savoir_plus"
             %img.img_responsive{src: "/assets/projects.png"}
             .title= t ".tous_projets"
-
-:javascript
-  $(window).load(function(){
-    startPortfolio();
-  });
