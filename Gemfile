@@ -40,6 +40,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+gem 'heroku-deflater', :group => :production
 
 gem 'haml'
 
@@ -50,6 +51,4 @@ gem 'less-rails-bootstrap'
 
 gem 'pg'
 
-group :development do
-  gem 'webrick'
-end
+gem 'webrick', :group => :development
