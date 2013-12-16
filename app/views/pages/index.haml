@@ -4,9 +4,9 @@
   :javascript
     $(function() { $("#menu li a[href='/#{I18n.locale}']").parent().addClass("active"); });
 
-  = stylesheet_link_tag 'homepage'
-  = stylesheet_link_tag 'portfolio'
-  = stylesheet_link_tag 'flexslider'
+  = stylesheet_link_tag 'homepage', :media => "all"
+  = stylesheet_link_tag 'portfolio', :media => "all"
+  = stylesheet_link_tag 'flexslider', :media => "all"
 
 #slider.container
   = render partial: "pages/homepage_partials/carousel"

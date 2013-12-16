@@ -3,7 +3,7 @@
   :javascript
     $(function() { $("#menu li a[href='/#{I18n.locale}/projects']").parent().addClass("active"); });
 
-  = stylesheet_link_tag 'portfolio'
+  = stylesheet_link_tag 'portfolio', :media => "all"
 
 #container.container
   - flash.each do |name, msg|

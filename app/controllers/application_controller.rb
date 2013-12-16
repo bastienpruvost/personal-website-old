@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   def set_locale
-    redirect_to "/fr"+request.fullpath and return unless params[:locale]
+    redirect_to("/fr"+request.fullpath, status: 302) and return unless params[:locale]
     I18n.locale = params[:locale]
     @flag = (I18n.locale == :en) ? "fr" : "en"
     @url_translated = request.fullpath.gsub(/^\/#{I18n.locale}/, "/"+@flag)

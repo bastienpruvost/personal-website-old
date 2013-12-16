@@ -1,7 +1,7 @@
 - content_for :head do
   :javascript
     $(function() { $("#menu li a[href='/#{I18n.locale}/contact']").parent().addClass("active"); });
-  = stylesheet_link_tag 'contact'
+  = stylesheet_link_tag 'contact', :media => "all"
 
 #container.contact.container
   - flash.each do |name, msg|
@@ -39,11 +39,10 @@
       %h3= t ".info"
       .informations
         %br
-        251 rue Faidherbe,62400 Béthune 
+        251 rue Faidherbe, 62400 Béthune 
         %br
-        bastien.pruvost <at > gmail.com 
-        %br
-        +33 6 51 66 44 74 
+        %img{src: "/assets/email.png", alt: "email address"}
+        %img{src: "/assets/phone.png", alt: "phone number"}
 
       .social
         %h3 Social

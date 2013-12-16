@@ -3,7 +3,7 @@
     $(function() { $("#menu li a[href='/#{I18n.locale}/cv']").parent().addClass("active"); });
 
   = javascript_include_tag 'cv'
-  = stylesheet_link_tag 'cv'
+  = stylesheet_link_tag 'cv', :media => "all"
 
 #container.container
   .row.resume
