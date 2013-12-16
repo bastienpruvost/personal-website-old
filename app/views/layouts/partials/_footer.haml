@@ -1,12 +1,13 @@
 .clear
 .container
-  #footer.hidden-print
-    = t "general.maj"
-    = (I18n.locale == :en ) ? "Dec. 13, 2013" : "13 Déc. 2013"
-    %br
-    = t "general.optimise"
-    %br
-    BastienPruvost.com - Copyright &copy; 2013 - 
-    = t "general.reserve"
-  #footer.well.well-sm.visible-print
-    = t "general.imprime"
+  #footer
+    .hidden-print
+      = t "general.maj"
+      = (I18n.locale == :en ) ? "Dec. 13, 2013" : "13 Déc. 2013"
+      %br
+      = t "general.optimise"
+      %br
+      BastienPruvost.com - Copyright &copy; 2013 - 
+      = t "general.reserve"
+    .well.well-sm.visible-print
+      = t "general.imprime"
