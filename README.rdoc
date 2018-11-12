@@ -1,3 +1,4 @@
 == README
 
 This is my personal website / portfolio
+(note: deprecated. Might use the logic again one day if I wanna build a detailed portfolio, but the UI was pretty ugly)
